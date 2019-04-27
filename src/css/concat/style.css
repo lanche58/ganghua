@@ -1,0 +1,23 @@
+.header {
+  display: none; }
+
+.pbanner {
+  color: #fff; }
+  .pbanner .txts {
+    position: absolute;
+    left: 10%;
+    right: 10%;
+    top: 0;
+    bottom: 0; }
+  .pbanner .ch {
+    position: relative;
+    font-size: 50px; }
+    .pbanner .ch:before {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -25px;
+      bottom: 0;
+      width: 50px;
+      height: 5px;
+      background: #fff; }

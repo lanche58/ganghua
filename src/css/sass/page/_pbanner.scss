@@ -1,0 +1,23 @@
+.pbanner{
+    color: $white;
+    .txts{
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        top: 0;
+        bottom: 0;
+    }
+    .ch{
+        position: relative;
+        font-size: 50px;
+        &:before{
+            @include ba;
+            left: 50%;
+            margin-left: -25px;
+            bottom: 0;
+            width: 50px;
+            height: 5px;
+            background: $white;
+        }
+    }
+}
