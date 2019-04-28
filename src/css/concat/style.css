@@ -1,5 +1,23 @@
 .header {
-  display: none; }
+  height: 80px;
+  line-height: 24px; }
+  .header .logo {
+    float: left;
+    width: 154px;
+    margin: 20px 0 0 0;
+    transition: none; }
+  .header .nav {
+    float: left; }
+    .header .nav li {
+      float: left; }
+      .header .nav li > a {
+        display: block;
+        padding: 28px 0;
+        font-size: 16px;
+        color: #333; }
+
+.mtop {
+  height: 80px; }
 
 .pbanner {
   color: #fff; }

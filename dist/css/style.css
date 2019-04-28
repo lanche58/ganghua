@@ -725,7 +725,12 @@ a.pswp__share--download:hover{background:#ddd}
 .pswp__ui--one-slide .pswp__button--arrow--left,.pswp__ui--one-slide .pswp__button--arrow--right,.pswp__ui--one-slide .pswp__counter{display:none}
 .pswp__element--disabled{display:none!important}
 .pswp--minimal--dark .pswp__top-bar{background:0 0}
-.header{display:none}
+.header{height:80px;line-height:24px}
+.header .logo{float:left;width:154px;margin:20px 0 0 0;-webkit-transition:none;-moz-transition:none;transition:none}
+.header .nav{float:left}
+.header .nav li{float:left}
+.header .nav li>a{display:block;padding:28px 0;font-size:16px;color:#333}
+.mtop{height:80px}
 .pbanner{color:#fff}
 .pbanner .txts{position:absolute;left:10%;right:10%;top:0;bottom:0}
 .pbanner .ch{position:relative;font-size:50px}
