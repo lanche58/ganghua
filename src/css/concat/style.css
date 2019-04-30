@@ -4,20 +4,163 @@
   .header .logo {
     float: left;
     width: 154px;
-    margin: 20px 0 0 0;
+    margin: 20px 0 0 2.60417%;
     transition: none; }
   .header .nav {
     float: left; }
     .header .nav li {
-      float: left; }
+      position: relative;
+      float: left;
+      padding: 0 24px; }
       .header .nav li > a {
         display: block;
-        padding: 28px 0;
+        position: relative;
+        padding: 28px 5px;
         font-size: 16px;
         color: #333; }
+        .header .nav li > a:before {
+          content: "";
+          position: absolute;
+          left: auto;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 6px;
+          background: #1EB9EE;
+          transition: 600ms; }
+        .header .nav li > a.act, .header .nav li > a:hover {
+          color: #1EB9EE; }
+          .header .nav li > a.act:before, .header .nav li > a:hover:before {
+            left: 0;
+            right: auto;
+            width: 100%; }
+        @media screen and (max-width: 1366px) {
+          .header .nav li > a {
+            font-size: 14px; } }
+      @media screen and (max-width: 1600px) {
+        .header .nav li {
+          padding: 0 14px; } }
+      @media screen and (max-width: 1440px) {
+        .header .nav li {
+          padding: 0 10px; } }
+      @media screen and (max-width: 1201px) {
+        .header .nav li {
+          padding: 0 4px; } }
+  .header .h-tel {
+    float: left;
+    border-left: 1px solid #ccc;
+    padding-left: 48px;
+    margin: 16px 0 0 19px; }
+  .header .r {
+    position: relative;
+    padding-right: 30px; }
+  .header .pull-nav-bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    height: 230px;
+    background: #fff;
+    background: rgba(255, 255, 255, 0.8);
+    display: none; }
+  .header .pull-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-top: 28px; }
+    .header .pull-nav > a {
+      display: block;
+      padding: 5px 0;
+      text-align: center;
+      line-height: 1.4;
+      color: #999; }
+      .header .pull-nav > a:hover {
+        color: #1EB9EE; }
+      @media screen and (max-width: 1366px) {
+        .header .pull-nav > a {
+          font-size: 12px; } }
+  @media screen and (max-width: 1600px) {
+    .header .h-tel {
+      padding-left: 38px; } }
+  @media screen and (max-width: 1440px) {
+    .header .h-tel {
+      padding-left: 34px; } }
+  @media screen and (max-width: 1366px) {
+    .header .h-tel .tel {
+      font-size: 22px; }
+    .header .pull-nav-bg {
+      height: 212px; } }
+  @media screen and (max-width: 1201px) {
+    .header .r {
+      padding-right: 20px; }
+    .header .h-tel {
+      padding-left: 25px;
+      margin-left: 16px;
+      font-size: 12px; }
+      .header .h-tel .tel {
+        font-size: 20px; } }
+  @media screen and (max-width: 1024px) {
+    .header {
+      height: 60px; }
+      .header .r {
+        display: none; }
+      .header .logo {
+        margin: 10px 0 0 5%;
+        transform-origin: left center;
+        transform: scale(0.8); } }
+
+.h-tel {
+  color: #999; }
+  .h-tel .tel {
+    color: #1EB9EE;
+    font-size: 24px; }
 
 .mtop {
   height: 80px; }
+  @media screen and (max-width: 1024px) {
+    .mtop {
+      height: 60px; } }
+
+.menu-handler {
+  background: #1EB9EE; }
+  .menu-handler .burger {
+    background: #fff; }
+  @media screen and (max-width: 1024px) {
+    .menu-handler {
+      display: block; } }
+
+.menuBox {
+  z-index: 1011;
+  width: 215px;
+  background: #1EB9EE; }
+  .menuBox a {
+    color: #fff; }
+  .menuBox .navMobile {
+    padding-top: 70px; }
+
+.navMobile a {
+  display: block;
+  line-height: 1.4;
+  padding-left: 35px;
+  padding-right: 15px; }
+
+.navMobile dd > a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 18px; }
+  .navMobile dd > a.act {
+    background: #fff;
+    color: #1EB9EE; }
+
+.navMobile .mtv {
+  padding: 8px 0;
+  display: none; }
+  .navMobile .mtv a {
+    padding-top: 4px;
+    padding-bottom: 4px;
+    font-size: 16px; }
 
 .pbanner {
   color: #fff; }

@@ -90,52 +90,61 @@ $(function () {
     //     $('.friendship-link .k').stop().slideUp(300);
     // });
 
-
-
+    // pc导航
+    $('.header .nav li').mouseenter(function () {
+        if (isMobile) { return; }
+        $('.pull-nav-bg').stop().fadeIn();
+        $('.pull-nav').stop().fadeIn();
+    });
+    $('.header .r').mouseleave(function () { 
+        if (isMobile) { return; }
+        $('.pull-nav-bg').stop().fadeOut();
+        $('.pull-nav').stop().fadeOut();
+    });
 
 	// 手机导航
-	// $('.navMobile dd > a').bind(_click, function (e) {
-	// 	if($(this).next('.mtv').size() >= 1){
-	// 		if(!$(this).hasClass('act')){
-	// 			e.preventDefault();
-	// 			$('.navMobile dd > a').removeClass('act');
-	// 			$('.mtv').stop().slideUp(300);
-	// 			$(this).addClass('act');
-	// 			$(this).next('.mtv').stop().slideDown(300);
-	// 		}else{
-	// 			$(this).removeClass('act');
-	// 			$(this).next('.mtv').stop().slideUp(300);
-	// 		}
-	// 	}
-	// });
-	// $menuBtn.bind(_click, function () {
- //        var w = $menuBox.width();
- //        if (navItem == 0) {
- //            $('html').addClass('open');
- //            $('.menuBlack').stop().fadeIn(600);
- //            $(this).addClass('active');
- //            $menuBox.show().stop(false,false).animate({right:0});
- //            navItem = 1;
- //        } else {
- //            $('html').removeClass('open');
- //            $('.menuBlack').stop().fadeOut(600);
- //            $(this).removeClass('active').stop(false,false).animate({right:0});
- //            $menuBox.stop(false,false).animate({right:-w+"px"},function(){
- //                $(this).hide();
- //            });
- //            navItem = 0;
- //        };
- //    });
- //    $('.menuBlack').bind(_click, function () {
- //        var w = $menuBox.width();
- //        $('html').removeClass('open');
- //        $menuBtn.removeClass('active');
- //        $('.menuBlack').stop().fadeOut(600);
- //        $menuBox.stop(false,false).animate({right:-w+"px"},function(){
- //            $(this).hide();
- //        });
- //        navItem = 0;
- //    });
+	$('.navMobile dd > a').bind(_click, function (e) {
+		if($(this).next('.mtv').size() >= 1){
+			if(!$(this).hasClass('act')){
+				e.preventDefault();
+				$('.navMobile dd > a').removeClass('act');
+				$('.mtv').stop().slideUp(300);
+				$(this).addClass('act');
+				$(this).next('.mtv').stop().slideDown(300);
+			}else{
+				$(this).removeClass('act');
+				$(this).next('.mtv').stop().slideUp(300);
+			}
+		}
+	});
+	$menuBtn.bind(_click, function () {
+        var w = $menuBox.width();
+        if (navItem == 0) {
+            $('html').addClass('open');
+            $('.menuBlack').stop().fadeIn(600);
+            $(this).addClass('active');
+            $menuBox.show().stop(false,false).animate({right:0});
+            navItem = 1;
+        } else {
+            $('html').removeClass('open');
+            $('.menuBlack').stop().fadeOut(600);
+            $(this).removeClass('active');
+            $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+                $(this).hide();
+            });
+            navItem = 0;
+        };
+    });
+    $('.menuBlack').bind(_click, function () {
+        var w = $menuBox.width();
+        $('html').removeClass('open');
+        $menuBtn.removeClass('active');
+        $('.menuBlack').stop().fadeOut(600);
+        $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+            $(this).hide();
+        });
+        navItem = 0;
+    });
 	
 	
 	// pbanner animation

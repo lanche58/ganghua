@@ -33,7 +33,7 @@ a{color:#666}
 .ly-cont{position:relative;width:100%;height:100%;overflow:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch}
 }
 .header{position:fixed;z-index:1010;top:0;left:0;right:0;background:#fff;box-shadow:0 0 5px rgba(0,0,0,.5)}
-.menuBox{position:fixed;z-index:1009;top:0;right:0;width:100%;height:100%;background:#fff;overflow:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}
+.menuBox{position:fixed;top:0;right:-215px;height:100%;overflow:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;display:none}
 .menuBlack{position:fixed;z-index:1008;top:0;bottom:0;right:0;left:0;background:url(../images/black5.png);display:none}
 .container{min-height:600px;overflow:hidden}
 @media screen and (max-width:1366px){
@@ -726,11 +726,73 @@ a.pswp__share--download:hover{background:#ddd}
 .pswp__element--disabled{display:none!important}
 .pswp--minimal--dark .pswp__top-bar{background:0 0}
 .header{height:80px;line-height:24px}
-.header .logo{float:left;width:154px;margin:20px 0 0 0;-webkit-transition:none;-moz-transition:none;transition:none}
+.header .logo{float:left;width:154px;margin:20px 0 0 2.60417%;-webkit-transition:none;-moz-transition:none;transition:none}
 .header .nav{float:left}
-.header .nav li{float:left}
-.header .nav li>a{display:block;padding:28px 0;font-size:16px;color:#333}
+.header .nav li{position:relative;float:left;padding:0 24px}
+.header .nav li>a{display:block;position:relative;padding:28px 5px;font-size:16px;color:#333}
+.header .nav li>a:before{content:"";position:absolute;left:auto;right:0;bottom:0;width:0;height:6px;background:#1eb9ee;-webkit-transition:.6s;-moz-transition:.6s;transition:.6s}
+.header .nav li>a.act,.header .nav li>a:hover{color:#1eb9ee}
+.header .nav li>a.act:before,.header .nav li>a:hover:before{left:0;right:auto;width:100%}
+@media screen and (max-width:1366px){
+.header .nav li>a{font-size:14px}
+}
+@media screen and (max-width:1600px){
+.header .nav li{padding:0 14px}
+}
+@media screen and (max-width:1440px){
+.header .nav li{padding:0 10px}
+}
+@media screen and (max-width:1201px){
+.header .nav li{padding:0 4px}
+}
+.header .h-tel{float:left;border-left:1px solid #ccc;padding-left:48px;margin:16px 0 0 19px}
+.header .r{position:relative;padding-right:30px}
+.header .pull-nav-bg{position:absolute;left:0;right:0;top:100%;height:230px;background:#fff;background:rgba(255,255,255,.8);display:none}
+.header .pull-nav{display:none;position:absolute;left:0;right:0;top:100%;padding-top:28px}
+.header .pull-nav>a{display:block;padding:5px 0;text-align:center;line-height:1.4;color:#999}
+.header .pull-nav>a:hover{color:#1eb9ee}
+@media screen and (max-width:1366px){
+.header .pull-nav>a{font-size:12px}
+}
+@media screen and (max-width:1600px){
+.header .h-tel{padding-left:38px}
+}
+@media screen and (max-width:1440px){
+.header .h-tel{padding-left:34px}
+}
+@media screen and (max-width:1366px){
+.header .h-tel .tel{font-size:22px}
+.header .pull-nav-bg{height:212px}
+}
+@media screen and (max-width:1201px){
+.header .r{padding-right:20px}
+.header .h-tel{padding-left:25px;margin-left:16px;font-size:12px}
+.header .h-tel .tel{font-size:20px}
+}
+@media screen and (max-width:1024px){
+.header{height:60px}
+.header .r{display:none}
+.header .logo{margin:10px 0 0 5%;-webkit-transform-origin:left center;-moz-transform-origin:left center;-ms-transform-origin:left center;transform-origin:left center;-webkit-transform:scale(.8);-moz-transform:scale(.8);-ms-transform:scale(.8);transform:scale(.8)}
+}
+.h-tel{color:#999}
+.h-tel .tel{color:#1eb9ee;font-size:24px}
 .mtop{height:80px}
+@media screen and (max-width:1024px){
+.mtop{height:60px}
+}
+.menu-handler{background:#1eb9ee}
+.menu-handler .burger{background:#fff}
+@media screen and (max-width:1024px){
+.menu-handler{display:block}
+}
+.menuBox{z-index:1011;width:215px;background:#1eb9ee}
+.menuBox a{color:#fff}
+.menuBox .navMobile{padding-top:70px}
+.navMobile a{display:block;line-height:1.4;padding-left:35px;padding-right:15px}
+.navMobile dd>a{padding-top:12px;padding-bottom:12px;font-size:18px}
+.navMobile dd>a.act{background:#fff;color:#1eb9ee}
+.navMobile .mtv{padding:8px 0;display:none}
+.navMobile .mtv a{padding-top:4px;padding-bottom:4px;font-size:16px}
 .pbanner{color:#fff}
 .pbanner .txts{position:absolute;left:10%;right:10%;top:0;bottom:0}
 .pbanner .ch{position:relative;font-size:50px}
