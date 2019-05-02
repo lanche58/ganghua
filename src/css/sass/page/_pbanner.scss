@@ -9,6 +9,8 @@
     }
     .ch{
         position: relative;
+        padding-bottom: 13px;
+        margin-top: -50px;
         font-size: 50px;
         &:before{
             @include ba;
@@ -18,6 +20,40 @@
             width: 50px;
             height: 5px;
             background: $white;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .ch{
+            font-size: 40px;
+            &:before{
+                width: 40px;
+                height: 4px;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .ch{
+            margin-top: 0;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .ch{
+            font-size: 32px;
+            padding-bottom: 10px;
+            &:before{
+                width: 32px;
+                height: 3px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ch{
+            font-size: 26px;
+            padding-bottom: 8px;
+            &:before{
+                width: 26px;
+                height: 2px;
+            }
         }
     }
 }

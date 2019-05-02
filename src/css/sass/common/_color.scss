@@ -1,6 +1,11 @@
 @charset "utf-8";
 //主颜色
 $mc1: #1EB9EE;
+$mco1: rgba(30, 185, 238, .8);
+$mc2: #7FD5F2;
+$mc3: #8EDBF5;
+$mc4: #8ECCF5;
+$mc5: #65BFFB;
 //字体颜色
 $fc1: #333;
 $fc2: #666;
@@ -9,7 +14,10 @@ $fc3: #999;
 $hc1: #ccc; //bodr
 $hc2: #e5e5e5; // 90
 $hc3: #f2f2f2; // 95
+$hc4: #505050;
 
 $white: #fff;
 $white-8: rgba(255,255,255,.8);
+$white-2: rgba(255,255,255,.2);
 $black: #000;
+$black-1: rgba(0,0,0,.1);

@@ -221,8 +221,8 @@ a {
 /* winxin */
 .popUpblack { position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 1020; background: url(../images/black5.png); display: none; }
 .popUpblack.show .popUp { transform: none; opacity: 1; visibility: visible; transition: 600ms; }
-.popUp { position: absolute; left: 50%; top: 50%; margin: -126px 0 0 -115px; width: 220px; height: 242px; border: 5px solid #0079c3; background: #fff; opacity: 0; visibility: hidden; transform: translateY(20%); }
-.popUp .t { padding: 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; background: #0079c3; overflow: hidden; }
+.popUp { position: absolute; left: 50%; top: 50%; margin: -126px 0 0 -115px; width: 220px; height: 242px; border: 5px solid #1EB9EE; background: #fff; opacity: 0; visibility: hidden; transform: translateY(20%); }
+.popUp .t { padding: 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; background: #1EB9EE; overflow: hidden; }
 .popUp .t .close { float: right; cursor: pointer; color: #fff; font-weight: normal; }
 .popUp .img { padding: 20px; }
 .popUp .img img { width: 100%; display: block; }
@@ -269,7 +269,7 @@ a {
 .slick-slide.dragging img { pointer-events: none; }
 .slick-initialized .slick-slide { display: block; }
 .slick-loading .slick-slide { visibility: hidden; }
-.slick-vertical .slick-slide { display: block; height: auto; border: 1px solid transparent; }
+.slick-vertical .slick-slide { display: block; height: auto; }
 .slick-arrow.slick-hidden { display: none; }
 .slick-arrow{ position: absolute; z-index: 101; top: 50%; margin-top: -20px; width: 40px; height: 40px; background: #000; }
 .slick-prev{ left: 0; }
@@ -461,8 +461,8 @@ a {
 
 /* btn效果 */
 .bubbly-button:before, .bubbly-button:after { position: absolute; content: ""; display: block; width: 140%; height: 100%; left: -20%; transition: all ease-in-out 0.5s; background-repeat: no-repeat; }
-.bubbly-button:before { display: none; top: -75%; background-image: radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, transparent 20%, #0079c3 20%, transparent 30%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, transparent 10%, #0079c3 15%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%); background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%; }
-.bubbly-button:after { display: none; bottom: -75%; background-image: radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, transparent 10%, #0079c3 15%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%), radial-gradient(circle, #0079c3 20%, transparent 20%); background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%; }
+.bubbly-button:before { display: none; top: -75%; background-image: radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, transparent 20%, #1EB9EE 20%, transparent 30%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, transparent 10%, #1EB9EE 15%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%); background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%; }
+.bubbly-button:after { display: none; bottom: -75%; background-image: radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, transparent 10%, #1EB9EE 15%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%), radial-gradient(circle, #1EB9EE 20%, transparent 20%); background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%; }
 @keyframes topBubbles {
 	0% { background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%; }
 	50% { background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%; }

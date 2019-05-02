@@ -1,0 +1,290 @@
+.process-list{
+    .clearfix{
+        letter-spacing: -6px;
+        margin-left: -80px;
+    }
+    li{
+        position: relative;
+        &:after{
+            @include ba;
+            right: 80px;
+            top: 50%;
+            bottom: -24px;
+            width: 6px;
+            background: $hc1;
+        }
+        + li{
+            margin-top: 70px;
+            &:before{
+                @include ba;
+                background: $hc1;
+                height: 6px;
+                left: 80px;
+                right: 80px;
+                bottom: 100%;
+                margin-bottom: 30px + 10px;
+            }
+        }
+        &:first-child{
+            .process-item:first-child .arrow-wrap2{
+                display: none;
+            }
+        }
+        &:last-child{
+            &:after{
+                display: none;
+            }
+        }
+    }
+    .process-item{
+        display: inline-block;
+        vertical-align: middle;
+        letter-spacing: 0;
+        width: 33.33%;
+    }
+    .ma{
+        margin-left: 80px;
+    }
+    .fl-4{
+        .clearfix{
+            margin-left: -50px;
+        }
+        .process-item{
+            width: 25%;
+        }
+        .ma{
+            margin-left: 50px;
+        }
+        .arrow-wrap{
+            width: 50px;
+        }
+    }
+    &.arrow-white{
+        .process-arrow:before{
+            background: $white;
+        }
+        .process-arrow:after{
+            color: $white;
+        }
+        li:before, li:after{
+            background: $white;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li + li:before, li:after{
+            display: none;
+        }
+        .ma{
+            margin-left: 50px;
+        }
+        .clearfix{
+            display: flex;
+            align-items: center;
+            margin-left: -50px;
+        }
+        li{
+            + li{
+                margin-top: 50px;
+            }
+            &:nth-child(2n){
+                .clearfix{
+                    flex-direction: row-reverse;
+                }
+                .arrow-wrap{
+                    right: auto;
+                    left: 100%;
+                    .btn{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ma{
+            margin-left: 30px;
+        }
+        .clearfix{
+            margin-left: -30px;
+        }
+        li + li{
+            margin-top: 30px;
+        }
+        .fl-4{
+            .clearfix{
+                margin-left: -30px;
+            }
+            .ma{
+                margin-left: 30px;
+            }
+            .arrow-wrap{
+                width: 30px;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ma{
+            margin-left: 20px;
+        }
+        .clearfix{
+            margin-left: -20px;
+        }
+        li + li{
+            margin-top: 20px;
+        }
+        li:nth-child(2n){
+            .arrow-wrap{
+                margin-left: -5px;
+            }
+        }
+        .fl-4{
+            .clearfix{
+                margin-left: -20px;
+            }
+            .ma{
+                margin-left: 20px;
+            }
+            .arrow-wrap{
+                width: auto;
+            }
+        }
+    }
+}
+
+.process-pw{
+    width: 800px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.process-item{
+    .ma{
+        position: relative;
+        z-index: 99;
+        background: $mc1;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 1.4;
+        color: $white;
+        text-align: center;
+        @include mt3;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc2;
+            }
+        }
+    }
+    .tb{
+        height: 84px;
+        padding: 20px;
+    }
+    .arrow-wrap, .arrow-wrap2{
+        position: absolute;
+        line-height: 0;
+    }
+    .arrow-wrap{
+        top: 50%;
+        right: 100%;
+        width: 80px;
+        margin-top: -8px;
+    }
+    .arrow-wrap2{
+        left: 75px;
+        bottom: 100%;
+        margin-bottom: 10px;
+    }
+    @media screen and (max-width:861px) {
+        .arrow-wrap2{
+            left: 0;
+            right: 0;
+        }
+        .arrow-wrap{
+            width: 50px;
+        }
+        .ma{
+            font-size: 14px;
+        }
+        .tb{
+            height: 64px;
+            padding: 10px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .arrow-wrap{
+            width: 30px;
+        }
+        .arrow-wrap2{
+            margin-bottom: 0;
+        }
+        .arrow-wrap, .arrow-wrap2{
+            transform: scale(.6);
+        }
+    }
+    @media screen and (max-width:481px) {
+        .arrow-wrap{
+            width: auto;
+            margin-right: -5px;
+        }
+        .arrow-wrap2{
+            margin-bottom: -5px;
+        }
+        .arrow-wrap, .arrow-wrap2{
+            transform: scale(.4);
+        }
+        .ma{
+            font-size: 12px;
+        }
+    }
+}
+
+.process-list2{
+    .process-item{
+        .ma{
+            background: $mc2;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $mc1;
+                }
+            }
+        }
+    }
+}
+
+.process-list3{
+    .process-item{
+        .ma{
+            background: $mc3;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $mc1;
+                }
+            }
+        }
+    }
+}
+
+.process-list4{
+    .process-item{
+        .ma{
+            background: $mc4;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $mc1;
+                }
+            }
+        }
+    }
+}
+
+.process-list5{
+    .process-item{
+        .ma{
+            background: $mc5;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $mc1;
+                }
+            }
+        }
+    }
+}

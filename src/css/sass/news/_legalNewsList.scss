@@ -1,0 +1,54 @@
+.legal-news-list{
+    margin-left: -30px;
+    li{
+        width: 33.33%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .legal-news-item{
+        margin-left: 30px;
+    }
+    @media screen and (max-width:1366px) {
+        margin-left: -20px;
+        li{
+            margin-bottom: 20px;
+        }
+        .legal-news-item{
+            margin-left: 20px;
+        }
+    }
+    @media screen and (max-width:781px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 100%;
+        }
+    }
+}
+
+.legal-news-item{
+    display: block;
+    border: 1px solid $hc1;
+    height: 145px;
+    padding: 20px 20px 0;
+    .ti1{
+        margin-bottom: 5px;
+        font-size: 12px;
+        color: $fc3;
+    }
+    .ti2{
+        font-size: 18px;
+        color: $fc1;
+    }
+    .more{
+        margin-top: 27px;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            box-shadow: 3px 3px 5px $black-1;
+        }
+    }
+}

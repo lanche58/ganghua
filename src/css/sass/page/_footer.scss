@@ -1,0 +1,72 @@
+.footer{
+    background: $hc4;
+    color: $fc3;
+    line-height: 24px;
+    a{
+        color: $fc3;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1 !important;
+            }
+        }
+    }
+    .logo{
+        float: left;
+        margin-right: 60px;
+    }
+    .f-cta{
+        float: left;
+    }
+    .t{
+        padding: (55px - 10px) 0 (31px - 11px);
+        color: $white;
+        a{
+            color: $white;
+        }
+    }
+    .f-share{
+        float: right;
+        a + a{
+            margin-left: 11px - 6px;
+        }
+    }
+    .b{
+        padding: (50px - 24px) / 2 0;
+        border-top: 1px solid $white;
+        border-color: $white-2;
+        font-size: 12px;
+    }
+    .f-cop{
+        overflow: hidden;
+        a{
+            float: right;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .logo{
+            display: none;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .f-share, .f-cta{
+            float: none;
+        }
+        .f-share{
+            margin-top: 10px;
+        }
+        .f-cop a{
+            float: none;
+        }
+        .t{
+            padding-top: 35px;
+        }
+    }
+}
+
+.f-share{
+    a{
+        float: left;
+        line-height: 1;
+        font-size: 30px;
+    }
+}

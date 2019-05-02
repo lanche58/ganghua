@@ -1,0 +1,41 @@
+.back-wrap{
+    .more{
+        float: left;
+    }
+    .share{
+        float: right;
+        margin-top: (34px - 24px) / 2;
+    }
+    .b{
+        border-top: 3px solid $mc1;
+        margin-top: 20px;
+        > a{
+            display: block;
+            padding: (54px - 24px) / 2 0;
+            font-size: 16px;
+            color: $fc3;
+            line-height: 24px;
+            + a{
+                border-top: 1px solid $hc1;
+            }
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    color: $mc1;
+                }
+            }
+            @media screen and (max-width:1366px) {
+                font-size: 14px;
+            }
+        }
+        .icon{
+            @include di;
+            margin-right: 30px;
+            &:before{
+                font-size: 8px;
+            }
+            @media screen and (max-width:1366px) {
+                font-size: 14px;
+            }
+        }
+    }
+}

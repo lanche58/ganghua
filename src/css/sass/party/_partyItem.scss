@@ -1,0 +1,115 @@
+.party-cont{
+    border: 1px solid $hc1;
+    .picbox{
+        float: left;
+        width: 54%;
+    }
+    .pai{
+        padding-bottom: (360 / 649) * 100%;
+    }
+    .party-list{
+        padding: 30px 40px 0;
+    }
+    @media screen and (max-width:1366px) {
+        .party-list{
+            padding-left: 35px;
+            padding-right: 35px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .picbox{
+            width: 460px;
+        }
+        .party-list{
+            padding-top: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .picbox{
+            display: none;
+        }
+        .party-list{
+            padding: 25px 5%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .picbox{
+            display: block;
+            float: none;
+            width: 100%;
+        }
+        .party-list{
+            padding-top: (25 / 600) * 100vw;
+        }
+    }
+}
+
+.party-list{
+    .lk{
+        display: block;
+        line-height: 34px;
+        overflow: hidden;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .nowti, .date{
+                    color: $mc1;
+                }
+            }
+        }
+    }
+    .nowti{
+        line-height: 34px;
+        font-size: 16px;
+        color: $fc1;
+    }
+    .date{
+        float: right;
+        margin-left: 15px;
+        color: $fc3;
+    }
+    .nowti, .date{
+        @include mt3;
+    }
+    .slick-dots{
+        margin-top: 20px;
+        position: static;
+        text-align: left;
+    }
+    @media screen and (max-width:1366px) {
+        .lk{
+            line-height: 30px;
+        }
+        .nowti{
+            font-size: 14px;
+            line-height: 30px;
+        }
+        .date{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .nowti, .lk{
+            line-height: 28px;
+        }
+        .slick-dots{
+            margin-top: 15px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .slick-dots{
+            margin-top: 20px;
+        }
+    }
+}
+
+.party-item{
+    .page-ti{
+        margin-bottom: 13px;
+    }
+    + .party-item{
+        margin-top: 60px;
+        @media screen and (max-width:601px) {
+            margin-top: 10vw;
+        }
+    }
+}

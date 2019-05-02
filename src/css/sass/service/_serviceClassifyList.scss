@@ -1,0 +1,82 @@
+.sc-icon{
+    width: 150px;
+    text-align: center;
+    .icon{
+        line-height: 1;
+        font-size: 50px;
+        color: $mc1;
+    }
+    .name{
+        margin-top: 15px;
+        font-size: 20px;
+    }
+    @media screen and (max-width:1366px) {
+        width: 140px;
+        .icon{
+            font-size: 40px;
+        }
+        .name{
+            font-size: 18px;
+            margin-top: 10px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        width: 120px;
+        .icon{
+            font-size: 32px;
+        }
+        .name{
+            font-size: 16px;
+            margin-top: 8px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        width: 90px;
+        .icon{
+            font-size: 26px;
+        }
+        .name{
+            font-size: 12px;
+            margin-top: 5px;
+        }
+    }
+}
+
+.service-classify-list{
+    .freeTx{
+        padding-left: (120 / 1200) * 100%;
+        font-size: 16px;
+        @media screen and (max-width:1366px) {
+            font-size: 14px;
+        }
+    }
+    li{
+        position: relative;
+        &:before{
+            @include hv($white, 100%);
+        }
+        .pw{
+            position: relative;
+            padding: 60px 0;
+            border-top: 1px solid $hc1;
+            @media screen and (max-width:1366px) {
+                padding: 40px 0;
+            }
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                &:before{
+                    @include hvh;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .freeTx{
+            padding-left: 5%;
+        }
+        li .pw{
+            padding: (40 / 600) * 100vw 0;
+        }
+    }
+}

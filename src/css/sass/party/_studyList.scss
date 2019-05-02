@@ -1,0 +1,119 @@
+.study-list{
+    margin-left: -30px;
+    li{
+        width: 33.33%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .study-item{
+        margin-left: 30px;
+    }
+    @media screen and (max-width:1366px) {
+        margin-left: -20px;
+        li{
+            margin-bottom: 20px;
+        }
+        .study-item{
+            margin-left: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:641px) {
+        li{
+            width: 100%;
+        }
+    }
+}
+
+.study-item{
+    display: block;
+    position: relative;
+    color: $white;
+    .pai{
+        padding-bottom: (162 / 380) * 100%;
+    }
+    .txts{
+        @include plr;
+        top: 0;
+        padding: 25px 30px 0;
+    }
+    .date{
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .ti{
+        height: 20px * 2;
+        line-height: 20px;
+        font-size: 18px;
+        overflow: hidden;
+    }
+    .btn-more{
+        width: 80px;
+        height: 24px;
+        line-height: 22px;
+        border-color: $white;
+        color: $white;
+    }
+    .more{
+        margin-top: 15px;
+    }
+    @media screen and (max-width:1366px) {
+        .txts{
+            padding: 15px 20px 0;
+        }
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .btn-more{
+                background: $white;
+                color: $fc3;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .ti{
+            text-overflow: ellipsis;
+            height: auto;
+            white-space: nowrap;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .txts{
+            height: 100%;
+            padding-top: 20px;
+        }
+        .more{
+            @include plr;
+            bottom: 0;
+            padding: 0 20px 20px;
+        }
+    }
+    @media screen and (max-width:721px) {
+        .txts{
+            padding-top: 15px;
+        }
+        .more{
+            padding-bottom: 15px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .txts{
+            padding: 25px 5% 0;
+        }
+        .more{
+            padding: 0 5% 25px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .txts{
+            padding-top: (25 / 600) * 100vw;
+        }
+        .more{
+            padding-bottom: (25 / 600) * 100vw;
+        }
+    }
+}

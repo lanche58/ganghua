@@ -1,0 +1,105 @@
+.spe-news-a{
+    display: block;
+    border: 1px solid $hc1;
+    .picbox{
+        float: left;
+        width: 54%;
+    }
+    .pai{
+        padding-bottom: (360 / 649) * 100%;
+    }
+    .txts{
+        overflow: hidden;
+        padding: 55px 35px 0 45px;
+    }
+    .date{
+        margin-bottom: 7px;
+        color: $fc3;
+    }
+    .ti{
+        height: 32px * 2;
+        margin-bottom: 6px;
+        font-size: 26px;
+        color: $fc1;
+        line-height: 32px;
+        overflow: hidden;
+    }
+    .tx{
+        height: 24px * 2;
+        font-size: 16px;
+    }
+    .more{
+        margin-top: 30px;
+    }
+    @media screen and (max-width:1366px) {
+        .txts{
+            padding-top: 35px;
+            padding-left: 35px;
+        }
+        .ti{
+            font-size: 22px;
+            line-height: 28px;
+            height: 28px * 2;
+        }
+        .tx{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .picbox{
+            width: 460px;
+        }
+        .ti{
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            height: auto;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .picbox{
+            display: none;
+        }
+        .txts{
+            padding: 35px 5% 55px;
+        }
+        .tx{
+            width: 320px;
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .picbox{
+            display: block;
+            width: 100%;
+            float: none;
+        }
+        .txts{
+            padding-top: (25 / 600) * 100vw;
+        }
+    }
+}
+
+.spe-news{
+    .slick-dots{
+        left: 54%;
+        bottom: 25px;
+        text-align: left;
+        padding: 0 35px 0 45px;
+        @media screen and (max-width:1366px) {
+            padding-left: 35px;
+            bottom: 20px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .slick-dots{
+            left: 460px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .slick-dots{
+            left: 0;
+            padding: 0 5%;
+            text-align: center;
+        }
+    }
+}

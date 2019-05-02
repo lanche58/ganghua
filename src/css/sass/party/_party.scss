@@ -1,0 +1,24 @@
+.par1{
+    .pager{
+        margin-top: 70px;
+        @media screen and (max-width:601px) {
+            margin-top: (70 / 600) * 100vw;
+        }
+    }
+}
+
+.par2{
+    .study-list{
+        margin-bottom: 70px - 30px;
+    }
+    @media screen and (max-width:1366px) {
+        .study-list{
+            margin-bottom: 70px - 20px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .study-list{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+    }
+}

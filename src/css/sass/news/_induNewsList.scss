@@ -1,0 +1,46 @@
+.indu-news-list{
+    a{
+        display: block;
+        padding: (50px - 24px) / 2 0;
+        line-height: 24px;
+        border-bottom: 1px solid $hc1;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .nowti, .date, .more{
+                    color: $mc1;
+                }
+            }
+        }
+    }
+    .date{
+        float: left;
+        margin-right: 25px;
+        color: $fc3;
+    }
+    .more{
+        float: right;
+        margin-left: 25px;
+        color: $fc3;
+    }
+    .nowti{
+        line-height: 24px;
+        font-size: 16px;
+        color: $fc1;
+    }
+    .nowti, .date, .more{
+        @include mt3;
+    }
+    @media screen and (max-width:481px) {
+        .date{
+            margin-right: 15px;
+            font-size: 12px;
+        }
+        .more{
+            margin-left: 15px;
+            font-size: 12px;
+        }
+        .nowti{
+            font-size: 14px;
+        }
+    }
+}

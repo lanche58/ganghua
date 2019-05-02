@@ -1,0 +1,57 @@
+.ser-tx{
+    .freeTx{
+        border-top: 3px solid $mc1;
+        padding-top: 45px;
+        margin-top: 35px;
+        @media screen and (max-width:601px) {
+            padding-top: 7.5vw;
+            margin-top: (35 / 600) * 100vw;
+        }
+    }
+}
+
+.ser1{
+    .service-classify-list{
+        margin-top: 45px;
+        @media screen and (max-width:601px) {
+            margin-top: 7.5vw;
+        }
+    }
+}
+
+.ser2{
+    background: $white;
+    .page-ti{
+        margin-bottom: 45px;
+        @media screen and (max-width:601px) {
+            margin-bottom: 7.5vw;
+        }
+    }
+}
+
+.ser3{
+    .page-ti{
+        margin-bottom: 45px;
+        @media screen and (max-width:601px) {
+            margin-bottom: 7.5vw;
+        }
+    }
+}
+
+.service-guide-item{
+    .page-ti{
+        margin-bottom: 25px;
+        @media screen and (max-width:601px) {
+            margin-bottom: (25 / 600) * 100vw;
+        }
+    }
+    + .service-guide-item{
+        border-top: 1px solid $hc1;
+        padding-top: 50px;
+        margin-top: 60px;
+        @media screen and (max-width:601px) {
+            padding-top: (50 / 600) * 100vw;
+            margin-top: 10vw;
+        }
+    }
+}

@@ -1,0 +1,306 @@
+.btn-more{
+    width: 90px;
+    height: 30px;
+    border-radius: 15px;
+    border: 1px solid $hc1;
+    line-height: 28px;
+    text-align: center;
+    font-size: 12px;
+    color: $fc3;
+    @include mt3;
+}
+
+.btn-more-3{
+    @include c(24px);
+    border: 1px solid $hc1;
+    text-align: center;
+    line-height: 22px;
+    font-size: 8px;
+    color: $hc1;
+    @include mt3;
+}
+
+.btn-more-hover{
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .btn-more-3, .btn-more{
+                background: $mc1;
+                border-color: $mc1;
+                color: $white;
+            }
+        }
+    }
+}
+
+.btn-back{
+    width: 94px;
+    height: 34px;
+    border: 1px solid $hc1;
+    text-align: center;
+    line-height: 32px;
+    color: $fc3;
+    @include mt3;
+}
+
+.btn-back-hover{
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .btn-back{
+                background: $mc1;
+                border-color: $mc1;
+                color: $white;
+            }
+        }
+    }
+}
+
+.share{
+    line-height: 24px;
+    > p{
+        float: left;
+        font-size: 14px;
+        &:before{
+            @include di;
+            margin-right: 3px;
+            font-size: 16px;
+        }
+    }
+    .bdsharebuttonbox{
+        float: left;
+    }
+    a{
+        float: left;
+        background: none !important;
+        height: auto !important;
+        line-height: 24px !important;
+        color: $fc2 !important;
+        opacity: 1 !important;
+        font-size: 16px !important;
+        + a{
+            margin-left: 10px !important;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1 !important;
+            }
+        }
+    }
+}
+
+.pager{
+    a{
+        @include c(32px);
+        line-height: 32px;
+        margin: 0 2px;
+        &.act{
+            background: $mc1;
+            color: $white;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $mc1;
+                color: $white;
+            }
+        }
+    }
+}
+
+.btn-more-2{
+    width: 100px;
+}
+
+.date-wrap{
+    padding-top: 4px;
+    width: 54px;
+    height: 54px;
+    border: 1px solid $hc1;
+    font-size: 12px;
+    text-align: center;
+    line-height: 1;
+    color: $hc1;
+    span{
+        display: block;
+    }
+    .d{
+        margin-bottom: 3px;
+        font-size: 30px;
+    }
+}
+
+.btn-load{
+    width: 120px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 40px;
+    background: $hc1;
+    color: $white;
+    text-align: center;
+    @include mt3;
+}
+
+.btn-load-hover{
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .btn-load{
+                background: $mc1;
+            }
+        }
+    }
+}
+
+.btn-add{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -11px;
+    width: 21px;
+    height: 3px;
+    background: $white;
+    &:before{
+        @include ba;
+        left: 9px;
+        top: -9px;
+        width: 3px;
+        height: 21px;
+        background: $white;
+    }
+}
+
+.slick-dots{
+    li{
+        width: 8px;
+        height: 8px;
+        border: 1px solid $hc1;
+        margin: 0;
+        background: none;
+        + li{
+            margin-left: 10px;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                border-color: $mc1;
+                background: $mc1;
+            }
+        }
+    }
+    .slick-active{
+        border-color: $mc1;
+        background: $mc1;
+    }
+}
+
+.page-ti{
+    position: relative;
+    padding-left: 10px + 6px;
+    font-size: 30px;
+    color: $fc1;
+    line-height: 1.4;
+    &:before{
+        @include ba;
+        left: 0;
+        top: 50%;
+        margin-top: -5px;
+        @include c(10px);
+        background: $mc2;
+        border: 2px solid $mc1;
+    }
+    &.no-dot{
+        padding-left: 0;
+        &:before{
+            display: none;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width:601px) {
+        font-size: 22px;
+    }
+}
+
+.process-arrow{
+    position: relative;
+    &:before, &:after{
+        @include ba;
+    }
+    &:before{
+        background: $hc1;
+    }
+    &:after{
+        width: 0;
+        height: 0;
+        color: $hc1;
+    }
+}
+
+.process-left, .process-right{
+    width: 30px;
+    height: 16px;
+    &:before{
+        top: 50%;
+        margin-top: -3px;
+        width: 12px;
+        height: 6px;
+    }
+    &:after{
+        top: 0;
+        border-bottom: 8px solid transparent;
+        border-top: 8px solid transparent;
+    }
+}
+
+.process-left{
+    &:after{
+        left: 0;
+        border-right: 18px solid;
+    }
+    &:before{
+        right: 0;
+    }
+}
+
+.process-right{
+    &:after{
+        right: 0;
+        border-left: 18px solid;
+    }
+    &:before{
+        left: 0;
+    }
+}
+
+.process-up, .process-down{
+    width: 16px;
+    height: 30px;
+    &:before{
+        left: 50%;
+        margin-left: -3px;
+        height: 12px;
+        width: 6px;
+    }
+    &:after{
+        left: 0;
+        border-left: 8px solid transparent;
+        border-right: 8px solid transparent;
+    }
+}
+
+.process-up{
+    &:before{
+        bottom: 0;
+    }
+    &:after{
+        top: 0;
+        border-bottom: 18px solid;
+    }
+}
+
+.process-down{
+    &:before{
+        top: 0;
+    }
+    &:after{
+        bottom: 0;
+        border-top: 18px solid;
+    }
+}

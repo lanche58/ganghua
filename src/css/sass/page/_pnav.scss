@@ -1,0 +1,92 @@
+.pnav{
+    position: relative;
+    z-index: 99;
+    margin-top: -50px;
+    height: 50px;
+    line-height: 24px;
+    li{
+        width: 25%;
+        float: left;
+    }
+    a{
+        display: block;
+        padding: (50px - 24px) / 2 0;
+        border-left: 1px solid $white;
+        border-color: $white-8;
+        background: $mc1;
+        background: $mco1;
+        text-align: center;
+        font-size: 16px;
+        color: $white;
+        &.act{
+            background: $white;
+            color: $mc1;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $white;
+                color: $mc1;
+            }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        a{
+            font-size: 14px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        margin-top: 0;
+        border-bottom: 1px solid $hc1;
+        @include sx;
+        ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: auto;
+            min-width: 100%;
+            text-align: center;
+            letter-spacing: -6px;
+            white-space: nowrap;
+        }
+        li{
+            @include di;
+            letter-spacing: 0;
+            width: auto !important;
+            float: none;
+            padding: 0 10px;
+        }
+        a{
+            position: relative;
+            padding-left: 15px;
+            padding-right: 15px;
+            background: none;
+            border: none;
+            color: $fc2;
+            &:before{
+                @include hl($mc1, 4px);
+            }
+            &.act{
+                background: none;
+                &:before{
+                    @include hlw;
+                }
+            }
+        }
+    }
+}
+
+.res-page{
+    .pnav{
+        li{
+            width: 33.33%;
+        }
+    }
+}
+
+.ser-page{
+    .pnav{
+        li{
+            width: 16.66%;
+        }
+    }
+}
