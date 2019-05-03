@@ -26,8 +26,12 @@
 
 .page-cont{
     background: $white;
-    padding-left: (100 / 1200) * 100%;
-    padding-right: (100 / 1200) * 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+    @media screen and (max-width:1366px) {
+        padding-left: 70px;
+        padding-right: 70px;
+    }
     @media screen and (max-width:1024px) {
         width: 100%;
         padding-left: 5%;

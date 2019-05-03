@@ -55,3 +55,72 @@
         }
     }
 }
+
+.charging-label{
+    padding-bottom: 5px;
+    li{
+        float: left;
+        margin: 0 15px 15px 0;
+        padding: 0 30px;
+        background: $mc1;
+        border-radius: 20px;
+        font-size: 18px;
+        line-height: 40px;
+        color: $white;
+    }
+    @media screen and (max-width:641px) {
+        li{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            font-size: 14px;
+            line-height: 36px;
+            padding: 0 20px;
+            margin: 0 10px 10px 0;
+        }
+    }
+}
+
+.table-wrap{
+    @include sx;
+}
+
+.charging-table{
+    width: 100%;
+    table-layout: fixed;
+    background: $white;
+    line-height: 1.4;
+    text-align: center;
+    td, th{
+        border: 1px solid $hc3;
+        height: 40px;
+        padding: 10px 20px;
+    }
+    th{
+        background: $mc1;
+        color: $white;
+        font-weight: normal;
+    }
+    .text{
+        text-align: left;
+    }
+    @media screen and (max-width:1024px) {
+        width: 1000px;
+    }
+}
+
+.charging-item{
+    + .charging-item{
+        margin-top: 70px;
+        @media screen and (max-width:601px) {
+            margin-top: (70 / 600) * 100vw;
+        }
+    }
+    &:nth-child(2n){
+        .charging-table th{
+            background: $mc6;
+        }
+    }
+}

@@ -1,0 +1,174 @@
+.charging-method-item{
+    .page-ti{
+        margin-bottom: 20px;
+    }
+    .freeTx{
+        font-size: 16px;
+        @media screen and (max-width:1366px) {
+            font-size: 14px;
+        }
+    }
+    + .charging-method-item{
+        border-top: 1px solid $hc1;
+        margin-top: 35px;
+        padding-top: 35px;
+    }
+}
+
+.app-method{
+    .ma{
+        float: left;
+        margin-right: (70 / 1000) * 100%;
+        text-align: center;
+        color: $fc3;
+        img{
+            max-width: 100%;
+            vertical-align: bottom;
+            border: 1px solid $hc1;
+        }
+        p{
+            margin-top: 5px;
+        }
+    }
+    .freeTx{
+        padding-top: 25px;
+        .b{
+            width: 560px;
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ma{
+            width: 120px;
+            font-size: 12px;
+        }
+        .freeTx{
+            padding-top: 0;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ma{
+            width: 90px;
+            margin-right: 20px;
+            line-height: 1.4;
+        }
+        .freeTx{
+            font-size: 12px;
+        }
+    }
+}
+
+.freeTx{
+    a{
+        color: $fc2;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1;
+            }
+        }
+    }
+}
+
+.bank-list{
+    li{
+        float: left;
+        padding: 0 25px;
+        border-radius: 10px;
+        margin: 0 25px 25px 0;
+        border: 1px solid $hc1;
+        height: 60px;
+        line-height: 58px;
+        overflow: hidden;
+        img{
+            position: relative;
+            top: -1px;
+            vertical-align: middle;
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 23.5%;
+            margin: 0 2% 2% 0;
+            &:nth-child(4n){
+                margin-right: 0;
+            }
+        }
+    }
+    @media screen and (max-width:641px) {
+        li{
+            padding: 0 15px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            width: 32%;
+            &:nth-child(4n){
+                margin-right: 2%;
+            }
+            &:nth-child(3n){
+                margin-right: 0;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            height: 50px;
+            line-height: 48px;
+            padding: 0 10px;
+        }
+    }
+}
+
+.method-pa{
+    padding-left: 16px;
+}
+
+.business-method{
+    a{
+        display: block;
+        padding-left: 30px;
+        position: relative;
+        line-height: 24px;
+        font-size: 16px;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1;
+            }
+        }
+        @media screen and (max-width:1366px) {
+            font-size: 14px;
+        }
+    }
+    ul .icon{
+        position: absolute;
+        left: 0;
+        top: 0;
+        color: $mc1;
+        font-size: 22px;
+    }
+    li + li{
+        margin-top: 32px - 24px;
+    }
+    .spe{
+        .icon{
+            color: $mc6;
+        }
+    }
+    .method-notice{
+        margin-top: 10px;
+    }
+}
+
+.method-notice{
+    color: $fc3;
+    .impor{
+        color: $mc1;
+    }
+    .icon{
+        color: $mc6;
+        font-size: 22px;
+        line-height: 1;
+        vertical-align: middle;
+    }
+}

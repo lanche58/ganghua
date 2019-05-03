@@ -934,7 +934,10 @@ a.pswp__share--download:hover{background:#ddd}
 }
 .no-pnav .pbanner .ch{margin:0}
 .page-bg{background:#f2f2f2}
-.page-cont{background:#fff;padding-left:8.33333%;padding-right:8.33333%}
+.page-cont{background:#fff;padding-left:100px;padding-right:100px}
+@media screen and (max-width:1366px){
+.page-cont{padding-left:70px;padding-right:70px}
+}
 @media screen and (max-width:1024px){
 .page-cont{width:100%;padding-left:5%;padding-right:5%}
 }
@@ -1228,6 +1231,27 @@ a.pswp__share--download:hover{background:#ddd}
 @media screen and (max-width:601px){
 .service-guide-item+.service-guide-item{padding-top:8.33333vw;margin-top:10vw}
 }
+.charging-label{padding-bottom:5px}
+.charging-label li{float:left;margin:0 15px 15px 0;padding:0 30px;background:#1eb9ee;border-radius:20px;font-size:18px;line-height:40px;color:#fff}
+@media screen and (max-width:641px){
+.charging-label li{font-size:16px}
+}
+@media screen and (max-width:481px){
+.charging-label li{font-size:14px;line-height:36px;padding:0 20px;margin:0 10px 10px 0}
+}
+.table-wrap{overflow:hidden;overflow-x:auto;-webkit-overflow-scrolling:touch}
+.charging-table{width:100%;table-layout:fixed;background:#fff;line-height:1.4;text-align:center}
+.charging-table td,.charging-table th{border:1px solid #f2f2f2;height:40px;padding:10px 20px}
+.charging-table th{background:#1eb9ee;color:#fff;font-weight:400}
+.charging-table .text{text-align:left}
+@media screen and (max-width:1024px){
+.charging-table{width:1000px}
+}
+.charging-item+.charging-item{margin-top:70px}
+@media screen and (max-width:601px){
+.charging-item+.charging-item{margin-top:11.66667vw}
+}
+.charging-item:nth-child(2n) .charging-table th{background:#75a6e9}
 .sc-icon{width:150px;text-align:center}
 .sc-icon .icon{line-height:1;font-size:50px;color:#1eb9ee}
 .sc-icon .name{margin-top:15px;font-size:20px}
@@ -1347,3 +1371,58 @@ a.pswp__share--download:hover{background:#ddd}
 @media screen and (min-width:1025px){
 .process-list5 .process-item .ma:hover{background:#1eb9ee}
 }
+.charging-method-item .page-ti{margin-bottom:20px}
+.charging-method-item .freeTx{font-size:16px}
+@media screen and (max-width:1366px){
+.charging-method-item .freeTx{font-size:14px}
+}
+.charging-method-item+.charging-method-item{border-top:1px solid #ccc;margin-top:35px;padding-top:35px}
+.app-method .ma{float:left;margin-right:7%;text-align:center;color:#999}
+.app-method .ma img{max-width:100%;vertical-align:bottom;border:1px solid #ccc}
+.app-method .ma p{margin-top:5px}
+.app-method .freeTx{padding-top:25px}
+.app-method .freeTx .b{width:560px;max-width:100%}
+@media screen and (max-width:601px){
+.app-method .ma{width:120px;font-size:12px}
+.app-method .freeTx{padding-top:0}
+}
+@media screen and (max-width:481px){
+.app-method .ma{width:90px;margin-right:20px;line-height:1.4}
+.app-method .freeTx{font-size:12px}
+}
+.freeTx a{color:#666}
+@media screen and (min-width:1025px){
+.freeTx a:hover{color:#1eb9ee}
+}
+.bank-list li{float:left;padding:0 25px;border-radius:10px;margin:0 25px 25px 0;border:1px solid #ccc;height:60px;line-height:58px;overflow:hidden}
+.bank-list li img{position:relative;top:-1px;vertical-align:middle;max-width:100%}
+@media screen and (max-width:861px){
+.bank-list li{width:23.5%;margin:0 2% 2% 0}
+.bank-list li:nth-child(4n){margin-right:0}
+}
+@media screen and (max-width:641px){
+.bank-list li{padding:0 15px}
+}
+@media screen and (max-width:601px){
+.bank-list li{width:32%}
+.bank-list li:nth-child(4n){margin-right:2%}
+.bank-list li:nth-child(3n){margin-right:0}
+}
+@media screen and (max-width:481px){
+.bank-list li{height:50px;line-height:48px;padding:0 10px}
+}
+.method-pa{padding-left:16px}
+.business-method a{display:block;padding-left:30px;position:relative;line-height:24px;font-size:16px}
+@media screen and (min-width:1025px){
+.business-method a:hover{color:#1eb9ee}
+}
+@media screen and (max-width:1366px){
+.business-method a{font-size:14px}
+}
+.business-method ul .icon{position:absolute;left:0;top:0;color:#1eb9ee;font-size:22px}
+.business-method li+li{margin-top:8px}
+.business-method .spe .icon{color:#75a6e9}
+.business-method .method-notice{margin-top:10px}
+.method-notice{color:#999}
+.method-notice .impor{color:#1eb9ee}
+.method-notice .icon{color:#75a6e9;font-size:22px;line-height:1;vertical-align:middle}
