@@ -1,0 +1,119 @@
+.ab-intro{
+    .freeTx{
+        font-size: 16px;
+        margin-top: 15px;
+    }
+    .more{
+        margin-top: 60px;
+    }
+    @media screen and (max-width:1366px) {
+        .freeTx{
+            font-size: 14px;
+        }
+        .more{
+            margin-top: 50px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .more{
+            margin-top: (50 / 600) * 100vw;
+        }
+    }
+}
+
+.ab2{
+    position: relative;
+    padding-top: 126px;
+    .leader-cont{
+        margin-top: 60px;
+    }
+    .pw{
+        position: relative;
+    }
+    .bg{
+        @include plr;
+        top: 0;
+        bottom: 120px;
+        @include bg;
+    }
+}
+
+.leader-cont{
+    position: relative;
+    padding-top: 55px;
+    .pic{
+        width: (592 / 1200) * 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .txts{
+        position: relative;
+        width: (730 / 1200) * 100%;
+        float: right;
+        padding: 45px (65 / 1200) * 100%;
+        background: $white;
+    }
+    .ti{
+        font-size: 20px;
+    }
+    .freeTx{
+        margin-top: 25px;
+        padding-top: 25px;
+        border-top: 1px solid $hc1;
+        font-size: 16px;
+    }
+    @media screen and (max-width:1366px) {
+        padding-top: 45px;
+        .freeTx{
+            font-size: 14px;
+            padding-top: 20px;
+            margin-top: 20px;
+        }
+        .ti{
+            font-size: 16px;
+        }
+    }
+}
+
+.ab3{
+    @include bg;
+    padding-top: 120px;
+    margin-top: 90px;
+    .his-wrap{
+        margin-top: 50px;
+    }
+}
+
+.ab4{
+    .cul-list{
+        margin-top: 50px;
+    }
+}
+
+.ab5{
+    background: $hc3;
+    .ab-ti{
+        margin-bottom: 50px;
+    }
+}
+
+.ab6{
+    .ab-ti{
+        margin-bottom: 50px;
+    }
+    .honor-list{
+        margin-bottom: 70px - 30px;
+        @media screen and (max-width:1366px) {
+            margin-bottom: 70px - 20px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ab-ti{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+        .honor-list{
+            margin-bottom: (50 / 600) * 100vw;
+        }
+    }
+}

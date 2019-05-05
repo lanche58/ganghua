@@ -1,0 +1,52 @@
+.honor-list{
+    margin-left: -30px;
+    .item{
+        width: 25%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .pic{
+        margin-left: 30px;
+        &:after{
+            @include ba;
+            @include tblr;
+            border: 4px solid $mc1;
+            @include hide;
+            @include mt4;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                &:after{
+                    @include show;
+                }
+            }
+        }
+    }
+    .name{
+        display: none;
+    }
+    @media screen and (max-width:1366px) {
+        margin-left: -20px;
+        .item{
+            margin-bottom: 20px;
+        }
+        .pic{
+            margin-left: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .item{
+            width: 33.33%;
+        }
+    }
+    @media screen and (max-width:481px) {
+        margin-left: -10px;
+        .item{
+            width: 50%;
+            margin-bottom: 10px;
+        }
+        .pic{
+            margin-left: 10px;
+        }
+    }
+}

@@ -1,0 +1,90 @@
+.notice-list{
+    margin-left: -30px;
+    li{
+        width: 33.33%;
+        float: left;
+        margin-bottom: 30px;
+    }
+    .notice-item{
+        margin-left: 30px;
+    }
+    @media screen and (max-width:1366px) {
+        margin-left: -20px;
+        .notice-item{
+            margin-left: 20px;
+        }
+        li{
+            margin-bottom: 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            width: 100%;
+        }
+    }
+}
+
+.notice-item{
+    display: block;
+    position: relative;
+    height: 96px;
+    padding: 20px;
+    border: 1px solid $hc1;
+    overflow: hidden;
+    .date-wrap{
+        float: left;
+        margin-right: 15px;
+        @include mt3;
+    }
+    .txts{
+        overflow: hidden;
+        padding: 3px 25px 0 0;
+    }
+    .ti1{
+        margin-bottom: 5px;
+        font-size: 18px;
+        color: $fc1;
+        @include mt3;
+    }
+    .icon{
+        position: absolute;
+        right: 20px;
+        top: 50%;
+        margin-top: -9px;
+        font-size: 18px;
+        line-height: 1;
+        color: $hc1;
+        @include mt3;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            border-color: $mc1;
+            color: $mc1;
+            .icon, .ti1{
+                color: $mc1;
+            }
+            .date-wrap{
+                border-color: $mc1;
+                color: $mc1;
+            }
+            .icon{
+                transform: translateX(-5px);
+            }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .icon{
+            right: 10px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .icon{
+            right: 20px;
+        }
+    }
+}

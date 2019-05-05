@@ -20,6 +20,17 @@
     @include mt3;
 }
 
+.btn-more-4{
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    line-height: 38px;
+    font-size: 14px;
+    background: $mc1;
+    border-color: $mc1;
+    color: $white;
+}
+
 .btn-more-hover{
     @media screen and (min-width:1025px) {
         &:hover{
@@ -27,6 +38,10 @@
                 background: $mc1;
                 border-color: $mc1;
                 color: $white;
+            }
+            .btn-more-4{
+                background: none;
+                color: $mc1;
             }
         }
     }
@@ -211,6 +226,24 @@
         }
     }
     @media screen and (max-width:1366px) {
+        font-size: 24px;
+    }
+    @media screen and (max-width:601px) {
+        font-size: 22px;
+    }
+}
+
+.ab-ti{
+    line-height: 1.4;
+    font-size: 40px;
+    color: $fc1;
+    &.white{
+        color: $white;
+    }
+    @media screen and (max-width:1366px) {
+        font-size: 32px;
+    }
+    @media screen and (max-width:861px) {
         font-size: 24px;
     }
     @media screen and (max-width:601px) {

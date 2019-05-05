@@ -1,0 +1,90 @@
+.job-list{
+    li{
+        + li{ margin-top: 10px; }
+        &:first-child{
+            .t{ color: $white; font-size: 18px; cursor: default; 
+                > div{ background: $mc1; }
+            }
+        }
+        &.act{
+            .t{ 
+                .add, > div{ background: $mc2; }
+                .add:after{ transform: rotate(90deg); }
+                > div{ color: $white; }
+            }
+        }
+        @media screen and (min-width:1025px) {
+            &:not(:first-child):hover{
+                .t{  
+                    .add, > div{ background: $mc2; }
+                    > div{ color: $white; }
+                } 
+            }
+        }
+    }
+    .t{ overflow: hidden; background: $white; cursor: pointer;
+        > div{ float: left; position: relative; height: 60px; padding: 0 5px; @include bs; text-align: center; @include mt3;
+            + div{ border-left: 1px solid $hc3; }
+        }
+        .nowti{ line-height: 60px; }
+    }
+    .j1{ width: 24.5%; }
+    .j7{ width: 14.4%; }
+    .j5, .j4, .j3{ width: 10.8%; }
+    .j2{ width: 21.4%; }
+    .j6{ width: 7.3%; padding: 0 !important; }
+    .b{ padding: 45px 70px 35px 70px; background: $white; display: none; }
+    .add{ display: block; position: relative; height: 100%; background: $hc1; @include mt3;
+        &:before, &:after{ @include ba; top: 50%; left: 50%; background: $white; border-radius: 2px; @include mt4; }
+        &:before{ width: 20px; height: 2px; margin: -1px 0 0 -10px; }
+        &:after{ width: 2px; height: 20px; margin: -10px 0 0 -1px; }
+    }
+    .set-email{ color: $white; }
+}
+.set-email{ display: block; width: 120px; background: $hc1; text-align: center; color: $white; line-height: 40px; @include mt3;
+    @media screen and (min-width:1025px) {
+        &:hover{ background: $mc1; color: $white !important; }
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .job-list li:first-child .t{ font-size: 16px; }
+    .job-list .b{ padding-left: 50px; padding-right: 50px; }
+}
+
+@media screen and (max-width:1024px) {
+    .job-list li:first-child .t{ font-size: 14px; }
+    .job-list .b{ padding-left: 5%; padding-right: 5%; }
+}
+
+@media screen and (max-width:861px) {
+    .job-list .j7, .job-list .j5{ display: none; }
+    .job-list .j2, .job-list .j4{ width: 13.2%; }
+    .job-list .j3{ width: 23.4%; }
+    .job-list .j1{ width: 40.9%; }
+    .job-list .j6{ width: 9.3%; }
+}
+
+@media screen and (max-width:641px) {
+    .job-list .j4{ display: none; }
+    .job-list .j1{ width: 44.2%; }
+    .job-list .j2{ width: 16.5%; }
+    .job-list .j3{ width: 26.7%; }
+    .job-list .j6{ width: 12.6%; }
+}
+
+@media screen and (max-width:601px) {
+    .job-list .b{ padding-top: 7.5vw; }
+}
+
+@media screen and (max-width:481px) {
+    .job-list .j2{ display: none; }
+    .job-list .j1{ width: 52.2%; }
+    .job-list .j3{ width: 37.7%; }
+    .job-list .j6{ width: 10.1%; }
+    .job-list .t>div{ height: 50px; }
+    .job-list .t .nowti{ line-height: 50px; }
+    .job-list .t{ font-size: 12px; }
+    .job-list .add:before{ width: 10px; margin-left: -5px; }
+    .job-list .add:after{ height: 10px; margin-top: -5px; }
+}

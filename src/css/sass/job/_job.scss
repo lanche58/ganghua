@@ -1,0 +1,8 @@
+.nw1{
+    .job-list{
+        margin-bottom: 70px;
+        @media screen and (max-width:601px) {
+            margin-bottom: (70 / 600) * 100%;
+        }
+    }
+}

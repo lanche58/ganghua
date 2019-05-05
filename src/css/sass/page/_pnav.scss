@@ -20,11 +20,13 @@
         color: $white;
         &.act{
             background: $white;
+            border-color: $white;
             color: $mc1;
         }
         @media screen and (min-width:1025px) {
             &:hover{
                 background: $white;
+                border-color: $white;
                 color: $mc1;
             }
         }
@@ -84,6 +86,22 @@
 }
 
 .ser-page{
+    .pnav{
+        li{
+            width: 16.66%;
+        }
+    }
+}
+
+.notice-page{
+    .pnav{
+        li{
+            width: 50%;
+        }
+    }
+}
+
+.about-page{
     .pnav{
         li{
             width: 16.66%;

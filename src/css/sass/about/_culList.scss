@@ -1,0 +1,80 @@
+.cul-list{
+    margin-left: -30px;
+    li{
+        width: 25%;
+        float: left;
+    }
+    .ma{
+        margin-left: 30px;
+        position: relative;
+        color: $white;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .pai{
+                    &:before{
+                        @include hide;
+                    }
+                    &:after{
+                        @include show;
+                    }
+                }
+                .ti1{
+                    transform: translateY(-20px);
+                    @include hide;
+                }
+                .ti2{
+                    transform: none;
+                    @include show;
+                }
+            }
+        }
+    }
+    .pai{
+        padding-bottom: (350 / 280) * 100%;
+        &:before, &:after{
+            @include ba;
+            z-index: 1;
+            @include mt4;
+        }
+        &:before{
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: (125 / 350) * 100%;
+            background:linear-gradient(180deg,rgba(0,0,0,0) 0%,rgba(0,43,101,1) 100%);
+        }
+        &:after{
+            @include tblr;
+            background: $mc1;
+            background: $mco1;
+            @include hide;
+        }
+    }
+    .nowti{
+        @include plr;
+        z-index: 9;
+        text-align: center;
+        @include mt4;
+    }
+    .ti1{
+        bottom: 15px;
+        font-size: 16px;
+    }
+    .ti2{
+        bottom: 50%;
+        padding-bottom: 10px;
+        margin-bottom: -(46px / 2);
+        font-size: 26px;
+        transform: translateY(20px);
+        @include hide;
+        &:before{
+            @include ba;
+            bottom: 0;
+            left: 50%;
+            width: 30px;
+            height: 3px;
+            background: $white;
+            margin-left: -15px;
+        }
+    }
+}

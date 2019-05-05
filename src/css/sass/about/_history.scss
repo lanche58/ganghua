@@ -1,0 +1,65 @@
+.his-list{
+    width: 700px;
+    margin: 0 auto;
+    max-width: 90%;
+    li{
+        overflow: hidden;
+        margin-top: 60px;
+    }
+    .txts{
+        width: 50%;
+        position: relative;
+        &:before{
+            @include ba;
+            top: 10px;
+            width: 21px;
+            height: 22px;
+            background: url(../img/30.png) no-repeat;
+        }
+    }
+    .ri{
+        .txts{
+            float: right;
+            padding-left: 30px;
+            &:before{
+                left: -10px;
+            }
+        }    
+    }
+    .le{
+        text-align: right;
+        .freeTx{
+            text-align: right;
+        }
+        .txts{
+            padding-right: 30px;
+            &:before{
+                right: -11px;
+            }
+        }
+    }
+    .year{
+        border-bottom: 1px solid $white;
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+        line-height: 1;
+        font-size: 40px;
+    }
+    .freeTx{
+        font-size: 16px;
+    }
+}
+
+.his-wrap{
+    position: relative;
+    padding: 40px 0 100px;
+    border-top: 1px solid $white;
+    color: $white;
+    &:before{
+        @include ba;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        border-left: 1px solid $white;
+    }
+}

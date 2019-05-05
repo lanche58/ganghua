@@ -1,0 +1,139 @@
+.newest-notice{
+    background: $hc3;
+    .clearfix{
+        height: 100px;
+        margin-left: -30px;
+    }
+    .title-wrap{
+        float: left;
+        width: 33.33%;
+        height: 100%;
+        margin-right: 8%;
+    }
+    .ti{
+        padding-top: (100px - 30px) / 2;
+        margin-left: 30px;
+        height: 100%;
+        background: $mc1;
+        color: $white;
+        text-align: center;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    a{
+        display: block;
+        padding-top: (100px - 24px) / 2;
+        font-size: 16px;
+        line-height: 24px;
+        overflow: hidden;
+        p{
+            float: left;
+            width: 50%;
+            padding-right: 45px;
+            span{
+                color: $fc1;
+            }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .title-wrap{
+            margin-right: 5%;
+        }
+        .ti{
+            font-size: 22px;
+            margin-left: 20px;
+        }
+        a{
+            font-size: 14px;
+        }
+        .clearfix{
+            margin-left: -20px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .title-wrap{
+            margin-right: 35px;
+        }
+        a{
+            p{
+                padding-right: 35px;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        a{
+            display: flex;
+            align-items: center;
+            padding-top: 0;
+            height: 100%;
+        }
+        .ti{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .title-wrap{
+            margin-right: 25px;
+        }
+        a{
+            p{
+                padding-right: 25px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        a{
+            display: block;
+            padding: 20px 0;
+            flex: 1;
+            p{
+                width: 100%;
+                float: none;
+                + p{
+                    margin-top: 5px;
+                }
+            }
+        }
+        .clearfix{
+            height: auto;
+            display: flex;
+        }
+        .title-wrap{
+            height: auto;
+        }
+        .ti{
+            padding-top: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ti{
+            font-size: 16px;
+        }
+        .title-wrap{
+            margin-right: 20px;
+        }
+        a{
+            p{
+                padding-right: 20px;
+            }
+        }
+    }
+}
+
+.nw1{
+    .newest-notice{
+        margin-bottom: 40px;
+    }
+    .notice-list{
+        margin-bottom: 70px - 30px;
+        @media screen and (max-width:1366px) {
+            margin-bottom: 70px - 20px;
+        }
+        @media screen and (max-width:601px) {
+            margin-bottom: (50 / 600) * 100vw;
+        }
+    }
+}
