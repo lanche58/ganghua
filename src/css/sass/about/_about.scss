@@ -1,7 +1,7 @@
 .ab-intro{
     .freeTx{
         font-size: 16px;
-        margin-top: 15px;
+        margin-top: 25px;
     }
     .more{
         margin-top: 60px;
@@ -35,6 +35,23 @@
         top: 0;
         bottom: 120px;
         @include bg;
+    }
+    @media screen and (max-width:1024px) {
+        padding-bottom: 90px;
+        .bg{
+            bottom: 0;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .leader-cont{
+            margin-top: 50px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-bottom: (90 / 600) * 100%;
+        .leader-cont{
+            margin-top: (50 / 600) * 100%;
+        }
     }
 }
 
@@ -74,6 +91,36 @@
             font-size: 16px;
         }
     }
+    @media screen and (max-width:1024px) {
+        .pic{
+            width: 55%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .pic{
+            width: 65%;
+        }
+    }
+    @media screen and (max-width:641px) {
+        padding-top: 0;
+        .pic{
+            position: relative;
+            width: 100%;
+        }
+        .txts{
+            width: 100%;
+            float: none;
+            padding-left: 5%;
+            padding-right: 5%;
+            padding-top: 25px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .txts{
+            padding-top: (25 / 600) * 100%;
+            padding-bottom: 7.5vw;
+        }
+    }
 }
 
 .ab3{
@@ -83,11 +130,23 @@
     .his-wrap{
         margin-top: 50px;
     }
+    @media screen and (max-width:601px) {
+        margin-top: (90 / 600) * 100%;
+        .his-wrap{
+            margin-top: (50 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        padding-top: 80px;
+    }
 }
 
 .ab4{
     .cul-list{
         margin-top: 50px;
+        @media screen and (max-width:601px) {
+            margin-top: (50 / 600) * 100%;
+        }
     }
 }
 
@@ -95,6 +154,9 @@
     background: $hc3;
     .ab-ti{
         margin-bottom: 50px;
+        @media screen and (max-width:601px) {
+            margin-bottom: (50 / 600) * 100%;
+        }
     }
 }
 
@@ -116,4 +178,38 @@
             margin-bottom: (50 / 600) * 100vw;
         }
     }
+}
+
+.ab-type-list{
+    li{
+        margin: 0 (95 / 1200) * 100%;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .icon{
+                    transform: rotateY(180deg);
+                }
+            }
+        }
+    }
+    .icon{
+        line-height: 1;
+        color: $mc1;
+        font-size: 50px;
+        @include mt3;
+    }
+    .name{
+        margin-top: 10px;
+        font-size: 20px;
+    }
+}
+
+.ab7{
+    .ab-type-list{
+        margin-top: 70px;
+    }
+}
+
+.ab8{
+    position: relative;
+    background: $hc3;
 }

@@ -5,6 +5,9 @@
     li{
         overflow: hidden;
         margin-top: 60px;
+        @media screen and (max-width:601px) {
+            margin-top: 10vw;
+        }
     }
     .txts{
         width: 50%;
@@ -48,6 +51,14 @@
     .freeTx{
         font-size: 16px;
     }
+    @media screen and (max-width:601px) {
+        .freeTx{
+            font-size: 14px;
+        }
+        .year{
+            font-size: 32px;
+        }
+    }
 }
 
 .his-wrap{
@@ -61,5 +72,8 @@
         top: 0;
         bottom: 0;
         border-left: 1px solid $white;
+    }
+    @media screen and (max-width:601px) {
+        padding: (40 / 600) * 100vw 0 60px;
     }
 }

@@ -2051,7 +2051,7 @@
 
 .ab-intro .freeTx {
   font-size: 16px;
-  margin-top: 15px; }
+  margin-top: 25px; }
 
 .ab-intro .more {
   margin-top: 60px; }
@@ -2082,6 +2082,19 @@
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover; }
+  @media screen and (max-width: 1024px) {
+    .ab2 {
+      padding-bottom: 90px; }
+      .ab2 .bg {
+        bottom: 0; } }
+  @media screen and (max-width: 641px) {
+    .ab2 .leader-cont {
+      margin-top: 50px; } }
+  @media screen and (max-width: 601px) {
+    .ab2 {
+      padding-bottom: 15%; }
+      .ab2 .leader-cont {
+        margin-top: 8.33333%; } }
 
 .leader-cont {
   position: relative;
@@ -2113,6 +2126,28 @@
         margin-top: 20px; }
       .leader-cont .ti {
         font-size: 16px; } }
+  @media screen and (max-width: 1024px) {
+    .leader-cont .pic {
+      width: 55%; } }
+  @media screen and (max-width: 861px) {
+    .leader-cont .pic {
+      width: 65%; } }
+  @media screen and (max-width: 641px) {
+    .leader-cont {
+      padding-top: 0; }
+      .leader-cont .pic {
+        position: relative;
+        width: 100%; }
+      .leader-cont .txts {
+        width: 100%;
+        float: none;
+        padding-left: 5%;
+        padding-right: 5%;
+        padding-top: 25px; } }
+  @media screen and (max-width: 601px) {
+    .leader-cont .txts {
+      padding-top: 4.16667%;
+      padding-bottom: 7.5vw; } }
 
 .ab3 {
   background-position: center center;
@@ -2122,14 +2157,28 @@
   margin-top: 90px; }
   .ab3 .his-wrap {
     margin-top: 50px; }
+  @media screen and (max-width: 601px) {
+    .ab3 {
+      margin-top: 15%; }
+      .ab3 .his-wrap {
+        margin-top: 8.33333vw; } }
+  @media screen and (max-width: 481px) {
+    .ab3 {
+      padding-top: 80px; } }
 
 .ab4 .cul-list {
   margin-top: 50px; }
+  @media screen and (max-width: 601px) {
+    .ab4 .cul-list {
+      margin-top: 8.33333%; } }
 
 .ab5 {
   background: #f2f2f2; }
   .ab5 .ab-ti {
     margin-bottom: 50px; }
+    @media screen and (max-width: 601px) {
+      .ab5 .ab-ti {
+        margin-bottom: 8.33333%; } }
 
 .ab6 .ab-ti {
   margin-bottom: 50px; }
@@ -2146,6 +2195,29 @@
   .ab6 .honor-list {
     margin-bottom: 8.33333vw; } }
 
+.ab-type-list li {
+  margin: 0 7.91667%; }
+  @media screen and (min-width: 1025px) {
+    .ab-type-list li:hover .icon {
+      transform: rotateY(180deg); } }
+
+.ab-type-list .icon {
+  line-height: 1;
+  color: #1EB9EE;
+  font-size: 50px;
+  transition: 300ms; }
+
+.ab-type-list .name {
+  margin-top: 10px;
+  font-size: 20px; }
+
+.ab7 .ab-type-list {
+  margin-top: 70px; }
+
+.ab8 {
+  position: relative;
+  background: #f2f2f2; }
+
 .his-list {
   width: 700px;
   margin: 0 auto;
@@ -2153,6 +2225,9 @@
   .his-list li {
     overflow: hidden;
     margin-top: 60px; }
+    @media screen and (max-width: 601px) {
+      .his-list li {
+        margin-top: 10vw; } }
   .his-list .txts {
     width: 50%;
     position: relative; }
@@ -2184,6 +2259,11 @@
     font-size: 40px; }
   .his-list .freeTx {
     font-size: 16px; }
+  @media screen and (max-width: 601px) {
+    .his-list .freeTx {
+      font-size: 14px; }
+    .his-list .year {
+      font-size: 32px; } }
 
 .his-wrap {
   position: relative;
@@ -2197,6 +2277,9 @@
     top: 0;
     bottom: 0;
     border-left: 1px solid #fff; }
+  @media screen and (max-width: 601px) {
+    .his-wrap {
+      padding: 6.66667vw 0 60px; } }
 
 .cul-list {
   margin-left: -30px; }
@@ -2271,6 +2354,28 @@
       height: 3px;
       background: #fff;
       margin-left: -15px; }
+  @media screen and (max-width: 1366px) {
+    .cul-list {
+      margin-left: -20px; }
+      .cul-list .ma {
+        margin-left: 20px; }
+      .cul-list .ti2 {
+        font-size: 22px;
+        margin-bottom: -20px; } }
+  @media screen and (max-width: 861px) {
+    .cul-list li {
+      width: 33.33%;
+      margin-bottom: 20px; } }
+  @media screen and (max-width: 641px) {
+    .cul-list li {
+      width: 50%; } }
+  @media screen and (max-width: 481px) {
+    .cul-list {
+      margin-left: -10px; }
+      .cul-list li {
+        margin-bottom: 10px; }
+      .cul-list .ma {
+        margin-left: 10px; } }
 
 .honor-list {
   margin-left: -30px; }

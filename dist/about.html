@@ -369,6 +369,35 @@
 <script>
     $(function(){
         initPhotoSwipeFromDOM('.honor-list');
+        $('.pnav a').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.pull-nav .about').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.mtv .about').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                var w = $menuBox.width();
+                $('html').removeClass('open');
+                $menuBtn.removeClass('active');
+                $('.menuBlack').stop().fadeOut(600);
+                $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+                    $(this).hide();
+                });
+                navItem = 0;
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
     })
 </script>
 </body>
