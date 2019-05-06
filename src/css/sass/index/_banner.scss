@@ -1,4 +1,9 @@
 .banner{
+    .pic2{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
     .txts{
         position: absolute;
         left: 10%;
@@ -69,6 +74,43 @@
         }
         .txts{
             margin-bottom: 60px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .pic2{
+            position: relative;
+        }
+        .slick-arrow{
+            display: none !important;
+        }
+        .slick-dots{
+            bottom: 8%;
+        }
+        .txts{
+            bottom: 50%;
+            margin: 0;
+            transform: translateY(50%);
+        }
+    }
+    @media screen and (max-width:861px) {
+        .ch{
+            font-size: 26px;
+        }
+        .en{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ch{
+            font-size: 22px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ch{
+            font-size: 20px;
+        }
+        .en{
+            font-size: 10px;
         }
     }
 }

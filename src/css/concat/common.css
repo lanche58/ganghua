@@ -420,9 +420,12 @@ a {
 .scapic:hover img { transform: scale(1.1); }
 .scapic2:hover .pic img { transform: scale(1.1); }
 .transY{ transform: translateY(60px); opacity: 0; visibility: hidden; }
+.ba-transY{ transform: translateY(60px); opacity: 0; visibility: hidden; }
 .transYF{ transform: translateY(-60px); opacity: 0; visibility: hidden; }
 .transX{ transform: translateX(60px); opacity: 0; visibility: hidden; }
 .transXF{ transform: translateX(-60px); opacity: 0; visibility: hidden; }
+.ba-active .ba-transY{ transition-duration: 700ms; }
+.ba-active .ba-transY,
 .active .transY,
 .active .transYF,
 .active .transX,
@@ -437,6 +440,8 @@ a {
 .dly-7{ transition-delay: 700ms; }
 .dly-8{ transition-delay: 800ms; }
 .dly-9{ transition-delay: 900ms; }
+.dly-11{ transition-delay: 1100ms; }
+.dly-12{ transition-delay: 1200ms; }
 .am-lsi, .am-fiu, .am-fid, .am-fir, .am-fil { opacity: 0; }
 .active .am-lsi { animation: lightSpeedIn 800ms both; }
 .active .am-fiu { animation: fadeInUp 800ms both; }

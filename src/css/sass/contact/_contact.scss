@@ -3,6 +3,12 @@
     .BMap_mask{
         background: $mco3 !important;
     }
+    @media screen and (max-width:1366px) {
+        height: 508px;
+    }
+    @media screen and (max-width:601px) {
+        height: (508 / 600) * 100vw;
+    }
 }
 
 .service-network-wrap{
@@ -21,14 +27,46 @@
     .search-wrap{
         margin-top: 20px;
     }
+    @media screen and (max-width:1366px) {
+        margin: -170px 0 0 -500px;
+        height: 340px;
+        width: 320px;
+        padding: 28px 25px 0;
+        .search-result{
+            margin-top: 20px;
+        }
+        .search-wrap{
+            margin-top: 15px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        margin-left: 0;
+        left: 5%;
+    }
+    @media screen and (max-width:861px) {
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 40px 5%;
+    }     
 }
 
 .cta2{
     padding: 110px 0;
+    @media screen and (max-width:1366px) {
+        padding: 80px 0;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0;
+    }
 }
 
 .cta-wrap{
     padding: 0 50px;
+    @media screen and (max-width:1366px) {
+        padding: 0;
+    }
 }
 
 .cta-list{
@@ -57,7 +95,7 @@
         @include mt3;
     }
     .text{
-        padding-top: 5px;
+        padding-top: 18px;
         color: $fc3;
         overflow: hidden;
         span{
@@ -73,6 +111,49 @@
             &:not(.na):hover span{
                 color: $mc1;
             }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .text{
+            padding-top: 21px;
+            span{
+                font-size: 16px;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            display: flex;
+            align-items: center;
+        }
+        .text{
+            flex: 1;
+            padding-top: 0;
+        }
+    }
+    @media screen and (max-width:641px) {
+        li{
+            width: 100%;
+            float: none;
+            + li{
+                margin-top: 50px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        li + li{
+            margin-top: (50 / 600) * 100%;
+        }
+        .text{
+            font-size: 12px;
+            span{
+                font-size: 14px;
+            }
+        }
+        .icon{
+            width: 70px;
+            height: 70px;
+            line-height: 70px;
         }
     }
 }
@@ -96,13 +177,119 @@
         width: 128px;
         margin: 0 auto 12px;
     }
+    @media screen and (max-width:861px) {
+        display: none;
+    }
 }
 
 .cta3{
     .le{
+        padding-top: 30px;
         overflow: hidden;
+        .page-ti{
+            margin-bottom: 20px;
+            color: $white;
+        }
     }
-    .page-ti{
-        color: $white;
+    .selected-messages-list{
+        margin-top: 20px;
+    }
+    .more{
+        margin-top: 60px;
+    }
+    @media screen and (max-width:861px) {
+        .le{
+            padding-top: 0;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .more{
+            margin-top: 10vw;
+        }
+    }
+}
+
+.online-message{
+    .clearfix{
+        margin-left: -6px;
+        .inp-wrap{
+            float: left;
+            width: 50%;
+            padding-left: 6px;
+        }
+    }
+    .item + .item{
+        margin-top: 6px;
+    }
+    .last{
+        .inp-wrap{
+            width: 67%;
+        }
+        .verification-wrap{
+            float: right;
+            width: 100% - 67%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .last{
+            .inp-wrap{
+                width: 50%;
+            }
+            .verification-wrap{
+                width: 50%;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        .last{
+            .verification-wrap, .inp-wrap{
+                width: 100%;
+            }
+        }
+        .verification-wrap{
+            margin-bottom: 6px;
+        }
+    }
+}
+
+.selected-messages-list{
+    li{
+        border: 1px solid $hc1;
+        padding: 22px - 6px 25px;
+        border-radius: 5px;
+        + li{
+            margin-top: 30px;
+        }
+        @media screen and (max-width:601px) {
+            padding-left: 5%;
+            padding-right: 5%;
+        }
+    }
+    .item{
+        overflow: hidden;
+        .tii{
+            width: 74px;
+            float: left;
+            color: $fc3;
+        }
+        .text{
+            overflow: hidden;
+        }
+    }
+    .b{
+        border-top: 1px solid $hc1;
+        padding-top: 10px;
+        margin-top: 10px;
+        color: $fc3;
+        .text{
+            color: $mc1;
+        }
+        .date{
+            margin-top: 20px;
+            font-size: 12px;
+            span{
+                margin-right: 25px;
+            }
+        }
     }
 }

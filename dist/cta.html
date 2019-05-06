@@ -79,7 +79,7 @@
                 </div>
             </li>
         </ul>
-        <div class="h-tel"><a href="tel:02827224688">
+        <div class="h-tel"><a href="tel:02827224688" class="na">
             <p class="tii">24小时值班电话</p>
             <p class="tel">028-27224688</p>
         </a></div>
@@ -178,10 +178,9 @@
 </div>
 
 <div class="container">
-    <div class="cta1" id="cta1">
+    <div class="cta1 scroll-animation" id="cta1">
         <div class="rel">
-            <div id="map2"></div>
-            <div class="service-network-wrap">
+            <div class="service-network-wrap trans transX">
                 <h3 class="page-ti no-dot">服务网点</h3>
                 <div class="search-wrap clearfix">
                     <button type="button" class="search-btn">搜索</button>
@@ -202,17 +201,18 @@
                     </li>
                 </ul>
             </div>
+            <div id="map2"></div>
         </div>
     </div>
     
-    <div class="cta2 pw" id="cta2">
+    <div class="cta2 pw scroll-animation" id="cta2">
         <div class="cta-wrap">
             <ul class="cta-list clearfix">
-                <li>
+                <li class="trans transX">
                     <p class="icon iconfont icon-dianhua"></p>
                     <p class="text">联系电话<a href="tel:02827224688" class="na"><span>028-27224688</span></a></p>
                 </li>
-                <li>
+                <li class="trans transX">
                     <p class="icon iconfont icon-dizhi"></p>
                     <p class="text">公司地址<a href="#"><span>四川省简阳市射洪坝街道办事处龙颈路177号</span></a></p>
                 </li>
@@ -220,14 +220,14 @@
         </div>
     </div>
     
-    <div class="cta3" id="cta3">
+    <div class="cta3 scroll-animation" id="cta3">
         <div class="fixbg page-pa" style="background-image: url(img/90.png);">
             <div class="pw clearfix">
                 <div class="cta-ma">
-                    <img src="img/11.png" alt="">
+                    <img src="img/11.png" class="trans transY" alt="">
                     <div class="ma">
-                        <div class="pic2"><img src="img/46.png" alt=""></div>
-                        <p class="tac">您还可以扫描二维码<br>关注我们公司微信公众号反馈您的宝贵意见和建议</p>
+                        <div class="pic2 trans transY dly-2"><img src="img/46.png" alt=""></div>
+                        <p class="tac trans transY dly-3">您还可以扫描二维码<br>关注我们公司微信公众号反馈您的宝贵意见和建议</p>
                     </div>
                 </div>
                 <div class="le">
@@ -235,24 +235,68 @@
                     <form action="">
                         <div class="online-message">
                             <div class="clearfix item">
-                                <div class="inp-wrap"><input type="text" class="s-input" value="姓名"></div>
-                                <div class="inp-wrap"><input type="text" class="s-input" value="电话"></div>
+                                <div class="inp-wrap"><input type="text" class="s-input inp2" value="姓名"></div>
+                                <div class="inp-wrap"><input type="text" class="s-input inp2" value="电话"></div>
                             </div>
                             <div class="item">
-                                <div class="inp-wrap"><input type="text" class="s-input" value="邮箱"></div>
+                                <div class="inp-wrap"><input type="text" class="s-input inp2" value="邮箱"></div>
                             </div>
                             <div class="item">
-                                <div class="inp-wrap"><textarea class="s-input">如果您是我们的业主，请在留言中留下您居住的小区名称及您的房号，以便我们及时和您联系，更快地处理您的诉求，让您更满意。</textarea></div>
+                                <div class="inp-wrap"><textarea class="s-input inp2 s-textarea">如果您是我们的业主，请在留言中留下您居住的小区名称及您的房号，以便我们及时和您联系，更快地处理您的诉求，让您更满意。</textarea></div>
                             </div>
                             <div class="clearfix item last">
-                                <div class="inp-wrap"><input type="submit" class="btn-sub" value="姓名"></div>
-                                <div class="inp-wrap"><input type="text" class="s-input verification" value="输入验证码："></div>
+                                <div class="clearfix inp-wrap verification-wrap">
+                                    <a href="#" class="verification-btn"><img src="img/52.jpg" alt=""></a>
+                                    <div class="verification-inp"><input type="text" class="s-input inp2 verification" value="输入验证码："></div>
+                                </div>
+                                <div class="inp-wrap"><button type="submit" class="btn-sub">提交<i class="icon iconfont icon-xiangyoujiantou"></i></button></div>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+        
+        <div class="selected-messages-wrap pw page-pa">
+            <h3 class="page-ti tac no-dot">精选留言</h3>
+            <ul class="selected-messages-list">
+                <li>
+                    <div class="t">
+                        <div class="item"><p class="tii">姓名</p><p class="text">李阳</p></div>
+                        <div class="item"><p class="tii">反馈内容</p><p class="text">请问我在微信上充值后，为什么有提示说要去IC卡圈机提气？这是什么意思？</p></div>
+                    </div>
+                    <div class="b">
+                        <p class="tii">管理员回复</p>
+                        <p class="text">用户您好，目前IC卡用户在网上充值后需要带气卡到就近的营业厅的圈存机上提气，再将所提气量导入气表之后才能正常使用</p>
+                        <p class="date"><span>留言时间：2018-10-02</span><span>回复时间：2018-10-02</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="t">
+                        <div class="item"><p class="tii">姓名</p><p class="text">李阳</p></div>
+                        <div class="item"><p class="tii">反馈内容</p><p class="text">请问我在微信上充值后，为什么有提示说要去IC卡圈机提气？这是什么意思？</p></div>
+                    </div>
+                    <div class="b">
+                        <p class="tii">管理员回复</p>
+                        <p class="text">用户您好，目前IC卡用户在网上充值后需要带气卡到就近的营业厅的圈存机上提气，再将所提气量导入气表之后才能正常使用</p>
+                        <p class="date"><span>留言时间：2018-10-02</span><span>回复时间：2018-10-02</span></p>
+                    </div>
+                </li>
+                <li>
+                    <div class="t">
+                        <div class="item"><p class="tii">姓名</p><p class="text">李阳</p></div>
+                        <div class="item"><p class="tii">反馈内容</p><p class="text">请问我在微信上充值后，为什么有提示说要去IC卡圈机提气？这是什么意思？</p></div>
+                    </div>
+                    <div class="b">
+                        <p class="tii">管理员回复</p>
+                        <p class="text">用户您好，目前IC卡用户在网上充值后需要带气卡到就近的营业厅的圈存机上提气，再将所提气量导入气表之后才能正常使用</p>
+                        <p class="date"><span>留言时间：2018-10-02</span><span>回复时间：2018-10-02</span></p>
+                    </div>
+                </li>
+            </ul>
+            <div class="more btn-load-hover tac"><span class="btn-load btn">加载更多</span></div>
+        </div>
+        
     </div>
     
 </div>
@@ -304,6 +348,10 @@
         };
         var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
         ShowMap('104.018887,30.723201', k, '17');
+        $('.cta-list li').each(function(i) {
+            $(this).css({'transition-delay': 200*i + 'ms'})
+        });
+
     })
 </script>
 </body>

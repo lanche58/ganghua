@@ -19,7 +19,7 @@
     border: 1px solid $hc1;
     padding: 0 15px;
     li{
-        padding: (66px - 24px) / 2;
+        padding: (66px - 24px) / 2 0;
         overflow: hidden;
         line-height: 24px;
         + li{
@@ -33,12 +33,26 @@
     }
     .text{
         font-size: 18px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
     }
     a{
         @media screen and (min-width:1025px) {
             &:not(.na):hover{
                 color: $mc1;
             }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        li{
+            padding: 16px 0;
+        }
+        .tii{
+            width: 76px;
+        }
+        .text{
+            font-size: 16px;
         }
     }
 }

@@ -3,6 +3,10 @@
     left: 0; 
     top: 0; 
     width: 100%; 
+    @media screen and (max-width:1024px) {
+        position: static;
+        padding-top: 60px;
+    }
 }
 
 .row{

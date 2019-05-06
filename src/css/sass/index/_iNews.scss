@@ -1,7 +1,10 @@
 .ix-news-wrap{
     height: 100%;
     @include bg;
-    padding-top: 80px;
+    padding-top: (200 / 1920) * 100%;
+    @media screen and (max-width:1601px) {
+        padding-top: 9%;
+    }
 }
 
 .ix-news{
@@ -71,6 +74,34 @@
     .in-res{
         margin-bottom: 20px;
     }
+    @media screen and (max-width:1366px) {
+        .le{
+            height: 435px;
+            width: 335px;
+            margin-right: 10px;
+            li{
+                + li{
+                    margin-top: 10px;
+                }
+            }
+            .pic{
+                width: 90px;
+                height: 56px;
+            }
+            .date{
+                font-size: 12px;
+            }
+            .ti{
+                margin-bottom: 20px;
+            }
+        }
+        .ri{
+            margin-left: 335px + 10px;
+        }
+        .in-res{
+            margin-bottom: 10px;
+        }
+    }
 }
 
 .in-res-list{
@@ -116,6 +147,28 @@
         padding: 0 35px;
         text-align: left;
     }
+    @media screen and (max-width:1366px) {
+        height: 196px;
+        .picbox{
+            width: 340px;
+        }
+        .txts{
+            padding: 25px 25px 0;
+        }
+        .slick-dots{
+            left: 340px;
+            bottom: 15px;
+            padding: 0 25px;
+        }
+        .ti{
+            height: 22px * 2;
+            font-size: 16px;
+            line-height: 22px;
+        }
+        .date{
+            font-size: 12px;
+        }
+    }
 }
 
 .in-res{
@@ -133,7 +186,7 @@
 
 .in-party{
     background: $white;
-    height: 288px;
+    height: 283px;
     padding: 30px 30px 0;
     .ti{
         border-bottom: 1px solid $hc1;
@@ -183,5 +236,16 @@
         line-height: 34px;
         color: $fc1;
         @include mt3;
+    }
+    @media screen and (max-width:1366px) {
+        height: 229px;
+        padding-top: 25px;
+        li > a, .nowti{
+            line-height: 28px;
+        }
+        .ti{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
     }
 }

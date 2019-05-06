@@ -2,12 +2,17 @@
     .header{
         background: $white-2;
         box-shadow: none;
-        .h-tel .tel, a, .nav li > a{
+        .h-tel a, .h-tel .tel, .nav li > a{
             color: $white;
         }
         .h-tel{
             border-color: $white;
             border-color: $white-5;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .header{
+            background: $white;
         }
     }
 }
@@ -16,10 +21,11 @@
 #boxsider.pagesider6{
     .header{
         background: $white;
+        box-shadow: 0 0 5px rgba(0, 0, 0, .5);
         .nav li > a{
             color: $fc1;
         }
-        a{
+        .h-tel a{
             color: $fc2;
         }
         .h-tel .tel{
@@ -60,6 +66,8 @@
     transition: 800ms;
     li{
         padding: 15px 0;
+        height: 24px;
+        box-sizing: content-box;
         cursor: pointer;
         &.act{
             font-size: 14px;
@@ -79,5 +87,28 @@
     }
     &.hide{
         @include hide;
+    }
+    @media screen and (max-width:1600px) {
+        left: 30px;
+    }
+    @media screen and (max-width:1440px) {
+        left: 20px;
+    }
+    @media screen and (max-width:1420px) {
+        left: 30px;
+        p{
+            display: none;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        p{
+            display: block;
+        }
+    }
+    @media screen and (max-width:1280px) {
+        left: 20px;
+    }
+    @media screen and (max-width:1240px) {
+        display: none;
     }
 }

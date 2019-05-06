@@ -201,11 +201,41 @@
         margin-top: 10px;
         font-size: 20px;
     }
+    @media screen and (max-width:1024px) {
+        li{
+            margin: 0;
+            width: 25%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li{
+            width: 33.33%;
+        }
+    }
+    @media screen and (max-width:641px) {
+        .icon{
+            font-size: 40px;
+        }
+        .name{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .icon{
+            font-size: 32px;
+        }
+        .name{
+            font-size: 12px;
+        }
+    }
 }
 
 .ab7{
     .ab-type-list{
         margin-top: 70px;
+        @media screen and (max-width:601px) {
+            margin-top: (70 / 600) * 100vw;
+        }
     }
 }
 
@@ -227,6 +257,24 @@
                 float: right;
                 margin-left: (70 / 1200) * 100%;
             }
+        }
+    }
+    @media screen and (max-width:861px) {
+        .pic{
+            display: none;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li{
+            padding: (90 / 600) * 100vw 0;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .pic{
+            display: block;
+            width: 100%;
+            float: none !important;
+            margin: 0 0 20px 0 !important;
         }
     }
 }

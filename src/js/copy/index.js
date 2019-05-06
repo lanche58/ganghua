@@ -117,19 +117,22 @@ $(document).ready(function(){
 		init();
 	});
 	function init(){
-		$('.banner .item').css({height:w_height});
-		setImgMax($('.banner .pic2'),1920,950,w_width,w_height);
 		if(!isMobile){
+			$('.banner .item').css({height:w_height});
+			setImgMax($('.banner .pic2'),1920,950,w_width,w_height);
 			$('.content').css({top:-(ci-1)*w_height});
 			$('.rowh').css({height:w_height});
 		}else{
 			$('.rowh').css({height:"auto"});
+			$('.content').attr('style', '');
+			$('.banner .item').css({height:"auto"});
+			$('.banner .pic2').attr('style', '');
 		}
 	}
 	init();
 
 	$('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
-		$('.banner .item').first().addClass('active');
+		$('.banner .item').first().addClass('ba-active');
 	});
 	$('.banner').slick({
 		speed: 1000,
@@ -140,8 +143,8 @@ $(document).ready(function(){
 		fade: true,
 		pauseOnHover: false
 	}).on('beforeChange', function(event, slick, currentSlide, nextSlide){
-		$('.banner .item').removeClass('active');
-		$('.banner .item').eq(nextSlide).addClass('active');
+		$('.banner .item').removeClass('ba-active');
+		$('.banner .item').eq(nextSlide).addClass('ba-active');
 	});
 
 	$('.in-res-list').slick({

@@ -397,6 +397,7 @@
 }
 
 .inp{
+    display: block;
     padding: (46px - 2px - 24px) / 2 0 (46px - 2px - 24px) / 2 15px;
     height: 46px;
     border: 1px solid $hc1;
@@ -407,3 +408,77 @@
     }
 }
 
+.inp2{
+    display: block;
+    width: 100%;
+    height: 50px;
+    padding: (50px - 2px -24px) / 2 20px;
+    border: 1px solid $white;
+    background: $white;
+    border-color: $white-9;
+    background: $white-9;
+    border-radius: 4px;
+    line-height: 24px;
+    @include mt3;
+    &:focus{
+        border-color: $mc1;
+    }
+}
+
+.s-textarea{
+    height: 176px;
+}
+
+.verification{
+    background: $mc2;
+    background: $mco4;
+    border-color: $mc2;
+    border-color: $mco4;
+    border-radius: 4px 0 0 4px;
+    color: $white;
+    &:focus{
+        background: $white;
+        background: $white-9;
+        color: $fc2;
+    }
+}
+
+.verification-btn{
+    float: right;
+    width: 100px;
+    height: 50px;
+    border-radius: 0 4px 4px 0;
+    overflow: hidden;
+    img{
+        display: block;
+        width: 100%;
+    }
+}
+
+.verification-inp{
+    overflow: hidden;
+}
+
+.btn-sub{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border-radius: 4px;
+    background: $mc1;
+    background: $mco5;
+    line-height: 50px;
+    color: $white;
+    text-align: left;
+    overflow: hidden;
+    @include mt3;
+    .icon{
+        float: right;
+        font-weight: bold;
+        font-size: 8px;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            background: $mc2;
+        }
+    }
+}
