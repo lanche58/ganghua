@@ -1,30 +1,21 @@
 @@include('./top.html')
 </head>
 <body>
-@@include('./header.html',{
-    "index": "act"
-})
-<div class="banner-box">
-    <div class="banner u-slick">
-        <div class="item"><a href="#">
-            <div class="pic2"><img src="img/banner1.jpg" alt=""></div>
-        </a></div>
+<div class="content">
+    <div index="1" id="s1" class="row rowh active">
+    </div>
+    <div index="2" id="s2" class="row rowh disappear">
+    </div>
+    <div index="3" id="s3" class="row disappear">
+        @@include('./footer.html')
+    </div>
+    <div id="boxsider" class="row rowh">
+        @@include('./header.html',{
+            "index": "act"
+        })
     </div>
 </div>
-<!-- banner-box -->
-<div class="container">
-    
-</div>
-<!-- container -->
-@@include('./footer.html')
-<div class="vwrap">
-    <div class="videobtg"></div>
-    <div class="videobox">
-        <div id="videobox"></div>
-        <div class="close"><i></i></div>
-    </div>
-</div>
-<script src="js/video/player.mini.js"></script>
+<script src="js/plugin.js"></script>
 <script src="js/page.js"></script>
 <script src="js/index.js"></script>
 </body>

@@ -2420,3 +2420,13 @@
         margin-bottom: 10px; }
       .honor-list .pic {
         margin-left: 10px; } }
+
+.content {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%; }
+
+.row {
+  position: relative;
+  overflow: hidden; }
