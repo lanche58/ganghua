@@ -1,0 +1,131 @@
+@@include('./top.html')
+</head>
+<body class="res-page">
+@@include('./header.html',{
+    "cta": "act"
+})
+@@include('./pbanner.html',{
+    "img": "51.jpg",
+    "ch": "联系我们"
+})
+<div class="pnav">
+    <ul class="pw clearfix">
+        <li><a href="cta.html?#cta1" class="act">服务网点</a></li>
+        <li><a href="cta.html?#cta1">联系方式</a></li>
+        <li><a href="cta.html?#cta1">客户留言</a></li>
+    </ul>
+</div>
+<!-- pnav -->
+<div class="container">
+    <div class="cta1" id="cta1">
+        <div class="rel">
+            <div id="map2"></div>
+            <div class="service-network-wrap">
+                <h3 class="page-ti no-dot">服务网点</h3>
+                <div class="search-wrap clearfix">
+                    <button type="button" class="search-btn">搜索</button>
+                    <div class="inp-wrap"><input type="text" class="inp" placeholder="输入网点名称" /></div>
+                </div>
+                <ul class="search-result">
+                    <li>
+                        <p class="tii">网点名称</p>
+                        <p class="text">政府东街营业大厅</p>
+                    </li>
+                    <li>
+                        <p class="tii">网点地址</p>
+                        <p class="text"><a href="#">政府东街营业大厅</a></p>
+                    </li>
+                    <li>
+                        <p class="tii">服务电话</p>
+                        <p class="text"><a href="tel:02827224688" class="na">028-27224688</a></p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- cta1 -->
+    <div class="cta2 pw" id="cta2">
+        <div class="cta-wrap">
+            <ul class="cta-list clearfix">
+                <li>
+                    <p class="icon iconfont icon-dianhua"></p>
+                    <p class="text">联系电话<a href="tel:02827224688" class="na"><span>028-27224688</span></a></p>
+                </li>
+                <li>
+                    <p class="icon iconfont icon-dizhi"></p>
+                    <p class="text">公司地址<a href="#"><span>四川省简阳市射洪坝街道办事处龙颈路177号</span></a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- cta2 -->
+    <div class="cta3" id="cta3">
+        <div class="fixbg page-pa" style="background-image: url(img/90.png);">
+            <div class="pw clearfix">
+                <div class="cta-ma">
+                    <img src="img/11.png" alt="">
+                    <div class="ma">
+                        <div class="pic2"><img src="img/46.png" alt=""></div>
+                        <p class="tac">您还可以扫描二维码<br>关注我们公司微信公众号反馈您的宝贵意见和建议</p>
+                    </div>
+                </div>
+                <div class="le">
+                    <h3 class="page-ti tac no-dot">在线留言</h3>
+                    <form action="">
+                        <div class="online-message">
+                            <div class="clearfix item">
+                                <div class="inp-wrap"><input type="text" class="s-input" value="姓名" /></div>
+                                <div class="inp-wrap"><input type="text" class="s-input" value="电话" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="inp-wrap"><input type="text" class="s-input" value="邮箱" /></div>
+                            </div>
+                            <div class="item">
+                                <div class="inp-wrap"><textarea class="s-input">如果您是我们的业主，请在留言中留下您居住的小区名称及您的房号，以便我们及时和您联系，更快地处理您的诉求，让您更满意。</textarea></div>
+                            </div>
+                            <div class="clearfix item last">
+                                <div class="inp-wrap"><input type="submit" class="btn-sub" value="姓名" /></div>
+                                <div class="inp-wrap"><input type="text" class="s-input verification" value="输入验证码：" /></div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cta3 -->
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=7d3a4c6e5e8a70dd200a2eeacf8c1b50"></script>
+<script>
+    $(function(){
+        function ShowMap(zuobiao, showmapInfo, zoom) {
+            var arrzuobiao = zuobiao.split(',');
+                var map = new BMap.Map("map2");
+            var point = new BMap.Point(arrzuobiao[0], arrzuobiao[1]);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("images/mapi.png", new BMap.Size(30, 41))
+            })
+            map.addOverlay(marker);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            map.centerAndZoom(point, zoom);
+            map.disableScrollWheelZoom();
+            var opts = {
+                width: 400
+            }
+            var infoWindow = new BMap.InfoWindow(showmapInfo, opts);
+            marker.addEventListener("click", function () {
+                if (w_width>=641) {
+                    map.openInfoWindow(infoWindow,point);
+                }  
+            });
+        };
+        var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
+        ShowMap('104.018887,30.723201', k, '17');
+    })
+</script>
+</body>
+</html>

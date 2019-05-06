@@ -210,6 +210,23 @@
 }
 
 .ab8{
-    position: relative;
     background: $hc3;
+}
+
+.abx-list{
+    .pic{
+        width: (532 / 1200) * 100%;
+        float: left;
+        margin-right: (70 / 1200) * 100%;
+    }
+    li{
+        padding: 90px 0;
+        &:nth-child(2n){
+            background: $white;
+            .pic{
+                float: right;
+                margin-left: (70 / 1200) * 100%;
+            }
+        }
+    }
 }

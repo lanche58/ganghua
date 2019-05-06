@@ -436,6 +436,7 @@ a {
 .dly-6{ transition-delay: 600ms; }
 .dly-7{ transition-delay: 700ms; }
 .dly-8{ transition-delay: 800ms; }
+.dly-9{ transition-delay: 900ms; }
 .am-lsi, .am-fiu, .am-fid, .am-fir, .am-fil { opacity: 0; }
 .active .am-lsi { animation: lightSpeedIn 800ms both; }
 .active .am-fiu { animation: fadeInUp 800ms both; }

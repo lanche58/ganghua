@@ -1,0 +1,90 @@
+.banner{
+    .txts{
+        position: absolute;
+        left: 10%;
+        right: 10%;
+        bottom: (394 / 950) * 100%;
+        margin-bottom: 80px;
+        color: $white;
+    }
+    .ch{
+        font-size: 50px;
+    }
+    .en{
+        margin-top: 6px;
+        text-transform: uppercase;
+        font-size: 26px;
+    }
+    .slick-dots{
+        bottom: (394 / 950) * 100%;
+        li{
+            width: 16px;
+            height: 6px;
+            border: 1px solid $white;
+            border-radius: 4px;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    background: $white;
+                }
+            }
+        }
+        .slick-active{
+            background: $white;
+            width: 30px;
+        }
+    }
+    .slick-arrow{
+        line-height: 40px;
+        width: auto;
+        background: none;
+        color: $white;
+        font-size: 20px;
+        font-weight: bold;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $mc1;
+            }
+        }
+    }
+    .slick-prev{
+        left: 30px;
+    }
+    .slick-next{
+        right: 30px;
+    }
+    @media screen and (max-width:1440px) {
+        .ch{
+            font-size: 40px;
+        }
+        .en{
+            font-size: 20px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .ch{
+            font-size: 32px;
+        }
+        .en{
+            font-size: 16px;
+        }
+        .txts{
+            margin-bottom: 60px;
+        }
+    }
+}
+
+.slick-arrow{
+    font-family: "iconfont" !important;
+}
+
+.slick-prev{
+    &:before{
+        content: "\e660";
+    }
+}
+
+.slick-next{
+    &:before{
+        content: "\e65f";
+    }
+}

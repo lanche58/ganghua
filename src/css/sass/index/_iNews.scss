@@ -1,0 +1,187 @@
+.ix-news-wrap{
+    height: 100%;
+    @include bg;
+    padding-top: 80px;
+}
+
+.ix-news{
+    .le{
+        float: left;
+        width: 400px;
+        height: 545px;
+        padding: 30px 30px 0;
+        margin-right: 20px;
+        background: $white;
+        .ti{
+            margin-bottom: 30px;
+            line-height: 24px;
+            font-size: 20px;
+            > a{
+                display: block;
+                overflow: hidden;
+                color: $mc1;
+            }
+            .icon{
+                float: right;
+                font-size: 14px;
+                font-weight: bold;
+            }
+        }
+        li{
+            + li{
+                margin-top: 25px;
+            }
+            > a{
+                display: block;
+                overflow: hidden;
+                @media screen and (min-width:1025px) {
+                    &:hover{
+                        .date, .tx{
+                            color: $mc1;
+                        }
+                    }
+                }
+            }
+        }
+        .pic{
+            width: 103px;
+            height: 65px;
+            float: left;
+            margin-right: 20px;
+        }
+        .txts{
+            overflow: hidden;
+        }
+        .date{
+            margin-bottom: 2px;
+            color: $fc3;
+            line-height: 1.4;
+            @include mt3;
+        }
+        .tx{
+            max-height: 20px * 2;
+            line-height: 20px !important;
+            color: $fc1;
+            @include mt3;
+        }
+    }
+    .ri{
+        margin-left: 400px + 20px;
+    }
+    .in-res{
+        margin-bottom: 20px;
+    }
+}
+
+.in-res-list{
+    height: 242px;
+    .item > a{
+        display: block;
+        overflow: hidden;
+    }
+    .picbox{
+        width: 420px;
+        float: left;
+    }
+    .pai{
+        padding-bottom: (243 / 421) * 100%;
+    }
+    .txts{
+        overflow: hidden;
+        padding: 35px 35px 0;
+    }
+    .ti{
+        height: 24px * 2;
+        margin-bottom: 6px;
+        font-size: 18px;
+        color: $fc1;
+        line-height: 24px;
+        overflow: hidden;
+    }
+    .tx{
+        line-height: 20px !important;
+        height: 20px * 2;
+        margin-bottom: 20px;
+    }
+    .date{
+        color: $fc3;
+        overflow: hidden;
+    }
+    .more{
+        float: right;
+    }
+    .slick-dots{
+        bottom: 25px;
+        left: 420px;
+        padding: 0 35px;
+        text-align: left;
+    }
+}
+
+.in-res{
+    position: relative;
+    background: $white;
+    .name{
+        position: absolute;
+        top: 25px;
+        left: 30px;
+        z-index: 100;
+        color: $white;
+        font-size: 20px;
+    }
+}
+
+.in-party{
+    background: $white;
+    height: 288px;
+    padding: 30px 30px 0;
+    .ti{
+        border-bottom: 1px solid $hc1;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        line-height: 24px;
+        font-size: 20px;
+        > a{
+            color: $mc1;
+            display: block;
+            overflow: hidden;
+        }
+        .icon{
+            float: right;
+            font-size: 20px;
+            color: $hc1;
+            font-weight: bold;
+            @include mt3;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    color: $mc1;
+                    transform: rotate(180deg);
+                }
+            }
+        }
+    }
+    li{
+        > a{
+            display: block;
+            line-height: 34px;
+            overflow: hidden;
+            color: $fc3;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    color: $mc1;
+                    .nowti{
+                        color: $mc1;
+                    }
+                }
+            }
+        }
+    }
+    .date{
+        float: right;
+    }
+    .nowti{
+        line-height: 34px;
+        color: $fc1;
+        @include mt3;
+    }
+}

@@ -1,0 +1,119 @@
+.ix-notice-wrap{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 100;
+    width: 900px;
+    height: 125px;
+    .le, .ri{
+        float: left;
+        height: 100%;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .le{
+        width: 54%;
+        padding-top: 20px;
+        background: $mc1;
+        background: $mco1;
+        color: $white;
+        a{
+            color: $white;
+        }
+        .ti{
+            margin-bottom: 13px;
+            line-height: 24px;
+            font-size: 20px;
+            > a{
+                display: block;
+                overflow: hidden;
+                
+            }
+            .icon{
+                float: right;
+                font-weight: bold;
+                @include mt3;
+                @media screen and (min-width:1025px) {
+                    &:hover{
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+        }
+        ul{
+            position: relative;
+            margin-left: -75px;
+            overflow: hidden;
+            &:before{
+                @include ba;
+                top: 4px;
+                bottom: 4px;
+                left: 50%;
+                margin-left: 37px;
+                border-left: 1px solid $white;
+                border-color: $white-2;
+            }
+        }
+        li{
+            float: left;
+            width: 50%;
+            > a{
+                margin-left: 75px;
+                display: block;
+                overflow: hidden;
+                line-height: 28px;
+                @media screen and (min-width:1025px) {
+                    &:hover{
+                        opacity: .7;
+                    }
+                }
+            }
+        }
+        .date{
+            float: left;
+            margin-right: 15px;
+        }
+        .nowti{
+            line-height: 28px;
+        }
+    }
+    .ri{
+        width: 100% - 54%;
+        padding-top: 32px;
+        background: $white;
+        background: $white-8;
+        font-size: 16px;
+        color: $fc3;
+        a{
+            color: $fc3;
+        }
+        span{
+            color: $fc1;
+        }
+        p + p{
+            margin-top: 6px;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        height: 100px;
+        .ri{
+            padding-top: 22px;
+            font-size: 14px;
+        }
+        .le{
+            padding-top: 15px;
+            .ti{
+                margin-bottom: 8px;
+                font-size: 18px;
+            }
+            li{
+                > a{
+                    line-height: 24px;
+                }
+            }
+            .nowti{
+                line-height: 24px;
+            }
+        }
+    }
+}

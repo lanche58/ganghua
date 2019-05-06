@@ -28,7 +28,8 @@ $(document).ready(function(){
 		var dir = delta > 0 ? "up" : "down";
 		var $actived = $(".row.active");
 		var activeIndex = parseInt($actived.attr('index'));
-		var numOfChildren = $(".row").length - 1;
+		var numOfChildren = $(".row").length;
+		console.log(numOfChildren);
 		if( dir == "down" && activeIndex<numOfChildren && canRoll) {
 			jumpPage(false);
 		} else if( dir =="up" && activeIndex>1 && canRoll) {
@@ -41,7 +42,7 @@ $(document).ready(function(){
 		var keycode = e.which || e.keyCode;
 		var $actived = $(".row.active");
 		var activeIndex = parseInt($actived.attr('index'));
-		var numOfChildren = $(".row").length - 1;
+		var numOfChildren = $(".row").length;
 		if ((keycode == 65 || keycode == 38 || keycode ==87 || keycode ==33 ) && activeIndex>1 && canRoll){
 			jumpPage(true);
 			return false;
@@ -54,7 +55,7 @@ $(document).ready(function(){
 	function downBtnDown(){
 		var $actived = $(".row.active");
 		var activeIndex = parseInt($actived.attr('index'));
-		var numOfChildren = $(".row").length - 1;
+		var numOfChildren = $(".row").length;
 		if (activeIndex<numOfChildren && canRoll){
 			jumpPage(false);
 		}else{
@@ -63,17 +64,11 @@ $(document).ready(function(){
 	}
 	//显示上一个||下一个section
 	function jumpPage(up) {
-		
 		var $actived = $(".row.active");
 		var activeIndex = parseInt($actived.attr('index'));
 		showPage(activeIndex + (up?-1:1));
-	};
-	
-	$('.u-arrow-box2').bind("click", function(){
-		downBtnDown();
-	});				
+	}			
 });
-
 	var curIndex = 1,
 		canRoll = true,
 		ci = 1;
@@ -81,45 +76,49 @@ $(document).ready(function(){
 		if ( curIndex == index ) return; 
 		if ( canRoll == false ) return;
 		canRoll = false;
-		// if(index==4){
-		// 	$("#s3").addClass('active2');
-		// }else{
-		// 	$("#s3").removeClass('active2');
-		// }
-		// if(index==1){
-		// 	$('.header').addClass('ixheader');
-		// 	$(".intro__canvas").addClass('hide');
-		// }else{
-		// 	$('.header').removeClass('ixheader');
-		// 	setTimeout(function(){
-		// 		$(".intro__canvas").removeClass('hide');
-		// 	},1000);
-		// }	
+		if (index==1||index==6) {
+			$('.row-controls').addClass('hide');
+		} else {
+			$('.row-controls').removeClass('hide');
+		}
+		if(index==6){
+			$("#s5").addClass('active2');
+		}else{
+			$("#s5").removeClass('active2');
+			var moveh = $('#move').height();
+			$('#move').stop().animate({top: (index-1)*moveh},800);
+			$('.row-controls li').removeClass('act').eq(index-1).addClass('act');
+		}	
 		$("#s"+curIndex).removeClass("active").addClass("disappear");
-		$("#boxsider").removeClass("pagesider1 pagesider2 pagesider3 pagesider4");
+		$("#boxsider").attr('class','');
 		$("#boxsider").addClass("pagesider"+index);
 		$("#s"+index).removeClass("disappear").addClass("active");
 		var t = -(index-1)*w_height;
-		if(index==4){
-			var hnum=jQuery("#s4").innerHeight();
-			t=(-2*w_height)-hnum;
+		if(index==6){
+			var hnum=$("#s6").innerHeight();
+			t=(-4*w_height)-hnum;
 		}
 		ci = index;
 		$(".content").stop().animate({top:t},800,"easeInOutCirc");
-		eval("s"+index+"_run()");
 		setTimeout(function(){
 			canRoll = true;
 		},1000);
 		curIndex = index;
 	}
-	// var s1_run = s2_run = s3_run = s4_run = s5_run = s6_run = s7_run = function(){};
+	$('.row-controls li').click(function() {
+		$('.row-controls li').removeClass('act');
+		$(this).addClass('act');
+		var index = $(this).index();
+		var moveh = $('#move').height();
+		$('#move').stop().animate({top: index*moveh},800);
+		showPage(index+1);
+	});
 	$(window).resize(function(){
 		init();
 	});
 	function init(){
-		$('.banner-box').css({height:w_height});
 		$('.banner .item').css({height:w_height});
-		setImgMax($('.banner .pic'),1920,950,w_width,w_height);
+		setImgMax($('.banner .pic2'),1920,950,w_width,w_height);
 		if(!isMobile){
 			$('.content').css({top:-(ci-1)*w_height});
 			$('.rowh').css({height:w_height});
@@ -128,75 +127,26 @@ $(document).ready(function(){
 		}
 	}
 	init();
-	// $('.banner').slick({
-	// 	slide:".item",
-	//   	autoplay: true,	
-	//   	arrows: false,
-	//    	dots:true,
-	//    	infinite: true,
-	//    	easing:"easeInOutExpo",
-	//    	speed: 1000,
-	//    	autoplaySpeed: 5000,
-	//   	pauseOnHover: false,
-	//    	fade: true,
-	//    	draggable:false,
-	//    	touchMove:false
-	// });
-	// $('.sw-pics .pic').each(function(i,e) {
-  //       $(this).css({zIndex:$('.sw-pics .pic').size()-i});
-  //   });
-	// var step = 0;
-	// function changeSwNav(){
-	// 	$('.sw-nav li').removeClass('act').eq(step).addClass('act');
-	// 	$('.sw-tx li').hide().eq(step).show();
-	// 	$('.sw-pics .pic').fadeOut(800).eq(step).stop(true,true).fadeIn(500);
-	// };
-	// changeSwNav();
-	// $('.sw-nav li').click(function(){
-	// 	step = $(this).index();
-	// 	changeSwNav();
-	// });
-	// $('.nw-slide').slick({
-	// 	slidesToShow: 3,
-  //       slidesToScroll: 3,
-	// 	responsive: [
-	// 	  {
-	// 		  breakpoint: 1025,
-	// 		  settings: {
-	// 			slidesToShow: 2,
-	// 			slidesToScroll: 2
-	// 		  }
-	// 	  },
-	// 	  {
-	// 		  breakpoint: 862,
-	// 		  settings: {
-	// 			slidesToShow: 1,
-	// 			slidesToScroll: 1
-	// 		  }
-	// 	  }
-	// 	]
-	// });
-	
-	// function changeHeader(){
-	// 	ST = $(window).scrollTop();
-	// 	if(isMobile){
-	// 		if(ST>1){
-	// 			$('.header').removeClass('ixheader');
-	// 		}else{
-	// 			$('.header').addClass('ixheader');
-	// 		}
-	// 	}
-	// };
-	// changeHeader();
-	// jQuery('.viBtn').click(function () {
-	// 	Video.load({
-	// 		vcontainer: 'videobox',
-	// 		vfimg: jQuery(this).attr("data-video-image"),
-	// 		vfiles: jQuery(this).attr("data-video-url"),
-	// 		isautoplay: 'true'
-	// 	});
-	// 	jQuery(".vwrap").fadeIn();
-	// });
-	// $(window).scroll(function () {
-	// 	changeHeader();
-  //   });
+
+	$('.banner').on('init', function(event, slick, currentSlide, nextSlide) {
+		$('.banner .item').first().addClass('active');
+	});
+	$('.banner').slick({
+		speed: 1000,
+		arrows: true,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 5000,
+		fade: true,
+		pauseOnHover: false
+	}).on('beforeChange', function(event, slick, currentSlide, nextSlide){
+		$('.banner .item').removeClass('active');
+		$('.banner .item').eq(nextSlide).addClass('active');
+	});
+
+	$('.in-res-list').slick({
+		arrows: false,
+		dots: true,
+		autoplay: true,
+		autoplaySpeed: 5000
+	});

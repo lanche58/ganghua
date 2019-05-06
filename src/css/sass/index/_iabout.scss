@@ -1,0 +1,62 @@
+.ix-ab-wrap{
+    height: 100%;
+    @include bg; 
+    padding-top: 80px;
+    color: $white;
+    .page-ti{
+        color: $white;
+    }
+    .tx{
+        height: 26px * 3;
+        margin-top: 25px;
+        font-size: 16px;
+        line-height: 26px !important;
+    }
+    .ia-service-list{
+        margin-top: 80px;
+    }
+    .more{
+        margin-top: 100px;
+    }
+    .ab-intro{
+        padding-top: (160 / 1920) * 100%;
+    }
+}
+
+.ia-service-list{
+    li{
+        position: relative;
+        width: 27.5%;
+        color: $white;
+        color: $white-5;
+        + li{
+            &:before{
+                @include ba;
+                left: 0;
+                top: 50%;
+                margin-top: -35px;
+                width: 1px;
+                height: 70px;
+                background: $white;
+                background: $white-3;
+            }
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .icon, .name{
+                    color: $white;
+                }
+            }
+        }
+    }
+    .icon{
+        font-size: 50px;
+        line-height: 1;
+        @include mt3;
+    }
+    .name{
+        margin-top: 10px;
+        font-size: 20px;
+        @include mt3;
+    }
+}
