@@ -1954,7 +1954,7 @@ a.pswp__share--download:hover{background:#ddd}
 #boxsider.pagesider5 .row-controls,#boxsider.pagesider6 .row-controls{border-color:#ccc;color:#ccc}
 #boxsider.pagesider5 .row-controls li.act,#boxsider.pagesider6 .row-controls li.act{color:#666}
 .active2 .transY{-webkit-transform:none;-moz-transform:none;-ms-transform:none;transform:none;-webkit-transition:none;-moz-transition:none;transition:none;opacity:1;visibility:visible}
-.row-controls{position:fixed;left:50px;top:50%;z-index:599;margin-top:-135px;padding-left:20px;border-left:1px solid #fff;border-color:rgba(255,255,255,.5);line-height:24px;font-size:12px;color:#fff;color:rgba(255,255,255,.5);-webkit-transition:.8s;-moz-transition:.8s;transition:.8s}
+.row-controls{position:fixed;left:50px;top:50%;z-index:599;margin-top:-135px;padding-left:20px;border-left:1px solid #fff;border-color:rgba(255,255,255,.5);line-height:24px;font-size:12px;color:#fff;color:rgba(255,255,255,.5);-webkit-transition:opacity .8s,visibility .8s;-moz-transition:opacity .8s,visibility .8s;transition:opacity .8s,visibility .8s}
 .row-controls li{padding:15px 0;height:24px;-moz-box-sizing:content-box;box-sizing:content-box;cursor:pointer}
 .row-controls li.act{font-size:14px;color:#fff}
 .row-controls p{-webkit-transition:.4s;-moz-transition:.4s;transition:.4s}
