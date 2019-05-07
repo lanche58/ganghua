@@ -29,7 +29,6 @@ $(document).ready(function(){
 		var $actived = $(".row.active");
 		var activeIndex = parseInt($actived.attr('index'));
 		var numOfChildren = $(".row").length;
-		console.log(numOfChildren);
 		if( dir == "down" && activeIndex<numOfChildren && canRoll) {
 			jumpPage(false);
 		} else if( dir =="up" && activeIndex>1 && canRoll) {

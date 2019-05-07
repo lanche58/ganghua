@@ -172,8 +172,8 @@
 <div class="pnav">
     <ul class="pw clearfix">
         <li><a href="cta.html?#cta1" class="act">服务网点</a></li>
-        <li><a href="cta.html?#cta1">联系方式</a></li>
-        <li><a href="cta.html?#cta1">客户留言</a></li>
+        <li><a href="cta.html?#cta2">联系方式</a></li>
+        <li><a href="cta.html?#cta3">客户留言</a></li>
     </ul>
 </div>
 
@@ -351,7 +351,35 @@
         $('.cta-list li').each(function(i) {
             $(this).css({'transition-delay': 200*i + 'ms'})
         });
-
+        $('.pnav a').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.pull-nav .cta').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
+        $('.mtv .cta').bind(_click, function(e) {
+            var hash = $(this).attr('href').split('#')[1];
+            if(hash){
+                e.preventDefault();
+                var w = $menuBox.width();
+                $('html').removeClass('open');
+                $menuBtn.removeClass('active');
+                $('.menuBlack').stop().fadeOut(600);
+                $menuBox.stop(false,false).animate({right:-w+"px"},function(){
+                    $(this).hide();
+                });
+                navItem = 0;
+                $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+            }
+        });
     })
 </script>
 </body>

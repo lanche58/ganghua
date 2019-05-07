@@ -109,6 +109,13 @@
         left: 20px;
     }
     @media screen and (max-width:1240px) {
+        left: 10px;
+        padding-left: 10px;
+        li.act{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:1190px) {
         display: none;
     }
 }

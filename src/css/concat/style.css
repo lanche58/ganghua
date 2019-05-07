@@ -3002,6 +3002,12 @@
       left: 20px; } }
   @media screen and (max-width: 1240px) {
     .row-controls {
+      left: 10px;
+      padding-left: 10px; }
+      .row-controls li.act {
+        font-size: 12px; } }
+  @media screen and (max-width: 1190px) {
+    .row-controls {
       display: none; } }
 
 .ix-service-wrap {
@@ -3020,6 +3026,12 @@
   @media screen and (max-width: 1366px) {
     .ix-service-wrap {
       padding-top: 13%; } }
+  @media screen and (max-width: 1024px) {
+    .ix-service-wrap {
+      padding: 90px 0; } }
+  @media screen and (max-width: 601px) {
+    .ix-service-wrap {
+      padding: 15vw 0; } }
 
 .ix-service {
   background: rgba(30, 185, 238, 0.5);
@@ -3070,6 +3082,9 @@
         margin-top: 20px; }
       .ix-service .page-ti {
         margin-bottom: 20px; } }
+  @media screen and (max-width: 1024px) {
+    .ix-service .le {
+      width: 100%; } }
 
 .is-ma {
   position: absolute;
@@ -3092,11 +3107,14 @@
   @media screen and (max-width: 1366px) {
     .is-ma {
       width: 480px;
-      margin-right: -500px; } }
-  .is-ma .ma-wrap {
-    width: 220px;
-    left: 73px;
-    top: 155px; }
+      margin-right: -500px; }
+      .is-ma .ma-wrap {
+        width: 220px;
+        left: 73px;
+        top: 155px; } }
+  @media screen and (max-width: 1024px) {
+    .is-ma {
+      display: none; } }
 
 .ix-news-wrap {
   height: 100%;
@@ -3107,6 +3125,12 @@
   @media screen and (max-width: 1601px) {
     .ix-news-wrap {
       padding-top: 9%; } }
+  @media screen and (max-width: 1024px) {
+    .ix-news-wrap {
+      padding: 80px 0 90px; } }
+  @media screen and (max-width: 601px) {
+    .ix-news-wrap {
+      padding: 13.33333vw 0 15vw; } }
 
 .ix-news .le {
   float: left;
@@ -3178,6 +3202,47 @@
   .ix-news .in-res {
     margin-bottom: 10px; } }
 
+@media screen and (max-width: 1024px) {
+  .ix-news .le {
+    padding: 25px 25px 0;
+    height: 395px; }
+    .ix-news .le .ti {
+      margin-bottom: 15px; }
+    .ix-news .le li + li {
+      margin-top: 5px; }
+    .ix-news .le .tx {
+      font-size: 13px;
+      line-height: 18px !important;
+      max-height: 36px; } }
+
+@media screen and (max-width: 861px) {
+  .ix-news .le {
+    width: 100%;
+    height: auto;
+    float: none;
+    margin: 0 0 10px 0;
+    padding: 30px 5% 35px; }
+    .ix-news .le li + li {
+      margin-top: 10px; }
+    .ix-news .le .pic {
+      width: 103px;
+      height: 65px; }
+    .ix-news .le .date {
+      font-size: 14px; }
+    .ix-news .le .tx {
+      font-size: 14px;
+      line-height: 20px !important;
+      max-height: 40px;
+      width: 210px;
+      max-width: 100%; }
+  .ix-news .ri {
+    margin: 0; } }
+
+@media screen and (max-width: 481px) {
+  .ix-news .le {
+    padding-top: 25px;
+    padding-bottom: 30px; } }
+
 .in-res-list {
   height: 242px; }
   .in-res-list .item > a {
@@ -3229,6 +3294,82 @@
         line-height: 22px; }
       .in-res-list .date {
         font-size: 12px; } }
+  @media screen and (max-width: 1024px) {
+    .in-res-list {
+      height: 156px; }
+      .in-res-list .picbox {
+        width: 272px; }
+      .in-res-list .ti {
+        height: auto;
+        line-height: 1.4;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .in-res-list .tx {
+        font-size: 13px;
+        line-height: 18px !important;
+        height: 36px;
+        margin-bottom: 15px; }
+      .in-res-list .txts {
+        padding: 20px 20px 0; }
+      .in-res-list .slick-dots {
+        left: 272px;
+        padding: 0 20px; } }
+  @media screen and (max-width: 861px) {
+    .in-res-list {
+      height: 196px; }
+      .in-res-list .picbox {
+        width: 340px; }
+      .in-res-list .txts {
+        padding: 25px 25px 0; }
+      .in-res-list .slick-dots {
+        left: 340px;
+        padding: 0 25px;
+        bottom: 20px; }
+      .in-res-list .ti {
+        font-size: 18px; }
+      .in-res-list .tx {
+        font-size: 14px;
+        line-height: 20px !important;
+        height: 40px;
+        margin-bottom: 20px; } }
+  @media screen and (max-width: 641px) {
+    .in-res-list {
+      height: 156px; }
+      .in-res-list .picbox {
+        width: 272px; }
+      .in-res-list .slick-dots {
+        left: 272px;
+        bottom: 15px;
+        padding: 0 20px; }
+      .in-res-list .txts {
+        padding: 20px 20px 0; }
+      .in-res-list .tx {
+        font-size: 13px;
+        line-height: 18px !important;
+        height: 36px;
+        margin-bottom: 15px; }
+      .in-res-list .ti {
+        font-size: 16px; } }
+  @media screen and (max-width: 521px) {
+    .in-res-list {
+      height: auto; }
+      .in-res-list .picbox {
+        width: 100%;
+        float: none; }
+      .in-res-list .txts {
+        padding: 5vw 5% 60px; }
+      .in-res-list .slick-dots {
+        left: 0;
+        padding: 0 5%;
+        bottom: 25px; }
+      .in-res-list .ti {
+        font-size: 18px;
+        white-space: normal; }
+      .in-res-list .tx {
+        font-size: 14px;
+        height: auto;
+        line-height: 20px !important;
+        margin-bottom: 20px; } }
 
 .in-res {
   position: relative;
@@ -3240,11 +3381,21 @@
     z-index: 100;
     color: #fff;
     font-size: 20px; }
+  @media screen and (max-width: 1024px) {
+    .in-res .name {
+      left: 25px; } }
+  @media screen and (max-width: 861px) {
+    .in-res .name {
+      left: 5%; } }
 
 .in-party {
   background: #fff;
   height: 283px;
   padding: 30px 30px 0; }
+  @media screen and (max-width: 1024px) {
+    .in-party {
+      padding-left: 25px;
+      padding-right: 25px; } }
   .in-party .ti {
     border-bottom: 1px solid #ccc;
     padding-bottom: 20px;
@@ -3276,7 +3427,8 @@
         .in-party li > a:hover .nowti {
           color: #1EB9EE; } }
   .in-party .date {
-    float: right; }
+    float: right;
+    margin-left: 10px; }
   .in-party .nowti {
     line-height: 34px;
     color: #333;
@@ -3290,11 +3442,24 @@
       .in-party .ti {
         padding-bottom: 10px;
         margin-bottom: 10px; } }
+  @media screen and (max-width: 861px) {
+    .in-party {
+      height: auto;
+      padding: 30px 5%; } }
+  @media screen and (max-width: 481px) {
+    .in-party {
+      padding-top: 25px;
+      padding-bottom: 20px; }
+      .in-party .date {
+        font-size: 12px; } }
 
 .ix-cta-wrap {
   position: relative;
   height: 100%;
   padding-top: 80px; }
+  @media screen and (max-width: 1024px) {
+    .ix-cta-wrap {
+      padding-top: 0; } }
 
 #map {
   position: absolute;
@@ -3304,6 +3469,14 @@
   width: 50%; }
   #map .BMap_mask {
     background: rgba(30, 185, 238, 0.2) !important; }
+  @media screen and (max-width: 861px) {
+    #map {
+      position: static;
+      width: 100%;
+      height: 508px; } }
+  @media screen and (max-width: 601px) {
+    #map {
+      height: 84.66667vw; } }
 
 .search-result {
   border: 1px solid #ccc;
@@ -3346,6 +3519,20 @@
     margin-bottom: 20px; }
   .ic-service-network .search-result {
     margin-top: 50px; }
+  @media screen and (max-width: 1024px) {
+    .ic-service-network {
+      padding: 80px 0 90px; } }
+  @media screen and (max-width: 861px) {
+    .ic-service-network {
+      padding: 40px 0; }
+      .ic-service-network .le {
+        width: 100%; }
+      .ic-service-network .b {
+        width: 100%; }
+      .ic-service-network .page-ti {
+        margin-bottom: 15px; }
+      .ic-service-network .search-result {
+        margin-top: 20px; } }
 
 #map2 {
   height: 648px; }
@@ -3577,3 +3764,51 @@
     font-size: 12px; }
     .selected-messages-list .b .date span {
       margin-right: 25px; }
+
+.sos-box {
+  position: absolute;
+  left: 10%;
+  right: 10%;
+  top: 50%;
+  margin-top: -292px;
+  text-align: center;
+  line-height: 1.4; }
+  .sos-box img {
+    vertical-align: bottom;
+    max-width: 100%; }
+  .sos-box .tx1 {
+    margin-top: 60px;
+    font-size: 30px;
+    color: #333; }
+  .sos-box .tx2 {
+    margin-top: 3px; }
+  .sos-box .fib {
+    margin-top: 25px; }
+  .sos-box .ib {
+    width: 160px;
+    height: 50px;
+    background: #1EB9EE;
+    color: #fff;
+    line-height: 50px; }
+    @media screen and (min-width: 1025px) {
+      .sos-box .ib:hover {
+        background: #7FD5F2; } }
+  @media screen and (max-width: 1366px) {
+    .sos-box {
+      margin-top: -282px; }
+      .sos-box .tx1 {
+        margin-top: 40px; } }
+  @media screen and (max-width: 1024px) {
+    .sos-box {
+      margin: 0;
+      transform: translateY(-50%); } }
+  @media screen and (max-width: 481px) {
+    .sos-box .tx1 {
+      font-size: 24px;
+      margin-top: 20px; }
+    .sos-box .ib {
+      width: 120px;
+      height: 40px;
+      line-height: 40px; }
+    .sos-box .fib {
+      margin-top: 15px; } }

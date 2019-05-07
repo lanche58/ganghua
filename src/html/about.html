@@ -33,13 +33,13 @@
         </div>
     </div>
     <!-- ab1 -->
-    <div class="ab2" id="ab2">
+    <div class="ab2 scroll-animation" id="ab2">
         <div class="bg" style="background-image: url(img/24.png);"></div>
         <div class="pw">
             <h2 class="ab-ti white tac">总经理寄语</h2>
             <div class="leader-cont scapic2 clearfix">
-                <div class="pic"><img src="img/26.png" alt=""></div>
-                <div class="txts">
+                <div class="pic trans transY"><img src="img/26.png" alt=""></div>
+                <div class="txts trans transY dly-2">
                     <p class="page-ti no-dot">居安思危、心怀蓝图、勇于担当</p>
                     <p class="ti">——二零一九年</p>
                     <div class="freeTx">
@@ -52,35 +52,35 @@
         </div>
     </div>
     <!-- ab2 -->
-    <div class="ab3" style="background-image: url(img/28.jpg);" id="ab3">
+    <div class="ab3 scroll-animation" style="background-image: url(img/28.jpg);" id="ab3">
         <h2 class="ab-ti pw white tac">发展历程</h2>
         <div class="his-wrap">
             <ul class="his-list">
-                <li class="ri">
+                <li class="ri trans transY">
                     <div class="txts">
                         <p class="year">1992</p>
                         <div class="freeTx">简阳港华燃气有限公司属于港华燃气集团下属子公司，前身是简阳市水煤气公司，于1992年成立。</div>
                     </div>
                 </li>
-                <li class="le">
+                <li class="le trans transY">
                     <div class="txts">
                         <p class="year">2004</p>
                         <div class="freeTx">销气量：649万m³ 用户量：20009户<br>被百江集团收购，并于2008年加入港华燃气集团</div>
                     </div>
                 </li>
-                <li class="ri">
+                <li class="ri trans transY">
                     <div class="txts">
                         <p class="year">2008</p>
                         <div class="freeTx">销气量：2457万m³ 用户量：37924户</div>
                     </div>
                 </li>
-                <li class="le">
+                <li class="le trans transY">
                     <div class="txts">
                         <p class="year">2017</p>
                         <div class="freeTx">销气量：2457万m³ 用户量：37924户</div>
                     </div>
                 </li>
-                <li class="ri">
+                <li class="ri trans transY">
                     <div class="txts">
                         <p class="year">2018</p>
                         <div class="freeTx">销气量：2457万m³ 用户量：37924户</div>
@@ -90,25 +90,25 @@
         </div>
     </div>
     <!-- ab3 -->
-    <div class="ab4 pw page-pa" id="ab4">
+    <div class="ab4 pw page-pa scroll-animation" id="ab4">
         <h2 class="ab-ti tac">企业文化</h2>
         <ul class="cul-list clearfix">
-            <li><div class="ma scapic">
+            <li class="trans transY"><div class="ma scapic">
                 <div class="pai"><img src="img/31.png" alt=""></div>
                 <p class="nowti ti1">团结务实</p>
                 <p class="nowti ti2">团结务实</p>
             </div></li>
-            <li><div class="ma scapic">
+            <li class="trans transY"><div class="ma scapic">
                 <div class="pai"><img src="img/32.png" alt=""></div>
                 <p class="nowti ti1">永争一流</p>
                 <p class="nowti ti2">永争一流</p>
             </div></li>
-            <li><div class="ma scapic">
+            <li class="trans transY"><div class="ma scapic">
                 <div class="pai"><img src="img/33.png" alt=""></div>
                 <p class="nowti ti1">安全为根</p>
                 <p class="nowti ti2">安全为根</p>
             </div></li>
-            <li><div class="ma scapic">
+            <li class="trans transY"><div class="ma scapic">
                 <div class="pai"><img src="img/34.png" alt=""></div>
                 <p class="nowti ti1">服务为本</p>
                 <p class="nowti ti2">服务为本</p>
@@ -123,22 +123,22 @@
         </div>
     </div>
     <!-- ab5 -->
-    <div class="ab6 page-pa pw" id="ab6">
+    <div class="ab6 page-pa pw scroll-animation" id="ab6">
         <h2 class="ab-ti tac">公司荣誉</h2>
         <div class="honor-list clearfix">
-            <div class="item" data-href="img/36.png" data-size="280x200">
+            <div class="item trans transX" data-href="img/36.png" data-size="280x200">
                 <p class="pic"><img src="img/36.png" alt=""></p>
                 <p class="name">荣誉名称</p>
             </div>
-            <div class="item" data-href="img/37.png" data-size="280x200">
+            <div class="item trans transX" data-href="img/37.png" data-size="280x200">
                 <p class="pic"><img src="img/37.png" alt=""></p>
                 <p class="name">荣誉名称</p>
             </div>
-            <div class="item" data-href="img/38.png" data-size="280x200">
+            <div class="item trans transX" data-href="img/38.png" data-size="280x200">
                 <p class="pic"><img src="img/38.png" alt=""></p>
                 <p class="name">荣誉名称</p>
             </div>
-            <div class="item" data-href="img/39.png" data-size="280x200">
+            <div class="item trans transX" data-href="img/39.png" data-size="280x200">
                 <p class="pic"><img src="img/39.png" alt=""></p>
                 <p class="name">荣誉名称</p>
             </div>
@@ -218,6 +218,15 @@
                 navItem = 0;
                 $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
             }
+        });
+        $('.his-list li').each(function(i) {
+            $(this).css({'transition-delay': 200*i + 'ms'})
+        });
+        $('.cul-list li').each(function(i) {
+            $(this).css({'transition-delay': 200*i + 'ms'})
+        });
+        $('.honor-list .item').each(function(i) {
+            $(this).css({'transition-delay': 200*i + 'ms'})
         });
     })
 </script>

@@ -5,6 +5,12 @@
     @media screen and (max-width:1601px) {
         padding-top: 9%;
     }
+    @media screen and (max-width:1024px) {
+        padding: 80px 0 90px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (80 / 600) * 100vw 0 (90 / 600) * 100vw;
+    }
 }
 
 .ix-news{
@@ -102,6 +108,62 @@
             margin-bottom: 10px;
         }
     }
+    @media screen and (max-width:1024px) {
+        .le{
+            padding: 25px 25px 0;
+            height: 395px;
+            .ti{
+                margin-bottom: 15px;
+            }
+            li{
+                + li{
+                    margin-top: 5px;
+                }
+            }
+            .tx{
+                font-size: 13px;
+                line-height: 18px !important;
+                max-height: 18px * 2;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        .le{
+            width: 100%;
+            height: auto;
+            float: none;
+            margin: 0 0 10px 0;
+            padding: 30px 5% 35px;
+            li{
+                + li{
+                    margin-top: 10px;
+                }
+            }
+            .pic{
+                width: 103px;
+                height: 65px;
+            }
+            .date{
+                font-size: 14px;
+            }
+            .tx{
+                font-size: 14px;
+                line-height: 20px !important;
+                max-height: 40px;
+                width: 210px;
+                max-width: 100%;
+            }
+        }
+        .ri{
+            margin: 0;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .le{
+            padding-top: 25px;
+            padding-bottom: 30px;
+        }
+    }
 }
 
 .in-res-list{
@@ -169,6 +231,102 @@
             font-size: 12px;
         }
     }
+    @media screen and (max-width:1024px) {
+        height: 156px;
+        .picbox{
+            width: 272px;
+        }
+        .ti{
+            height: auto;
+            line-height: 1.4;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        .tx{
+            font-size: 13px;
+            line-height: 18px !important;
+            height: 18px * 2;
+            margin-bottom: 15px;
+        }
+        .txts{
+            padding: 20px 20px 0;
+        }
+        .slick-dots{
+            left: 272px;
+            padding: 0 20px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        height: 196px;
+        .picbox{
+            width: 340px;
+        }
+        .txts{
+            padding: 25px 25px 0;
+        }
+        .slick-dots{
+            left: 340px;
+            padding: 0 25px;
+            bottom: 20px;
+        }
+        .ti{
+            font-size: 18px;
+        }
+        .tx{
+            font-size: 14px;
+            line-height: 20px !important;
+            height: 20px * 2;
+            margin-bottom: 20px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        height: 156px;
+        .picbox{
+            width: 272px;
+        }
+        .slick-dots{
+            left: 272px;
+            bottom: 15px;
+            padding: 0 20px;
+        }
+        .txts{
+            padding: 20px 20px 0;
+        }
+        .tx{
+            font-size: 13px;
+            line-height: 18px !important;
+            height: 18px * 2;
+            margin-bottom: 15px;
+        }
+        .ti{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:521px) {
+        height: auto;
+        .picbox{
+            width: 100%;
+            float: none;
+        }
+        .txts{
+            padding: 5vw 5% 60px;
+        }
+        .slick-dots{
+            left: 0;
+            padding: 0 5%;
+            bottom: 25px;
+        }
+        .ti{
+            font-size: 18px;
+            white-space: normal;
+        }
+        .tx{
+            font-size: 14px;
+            height: auto;
+            line-height: 20px !important;
+            margin-bottom: 20px;
+        }
+    }
 }
 
 .in-res{
@@ -182,12 +340,26 @@
         color: $white;
         font-size: 20px;
     }
+    @media screen and (max-width:1024px) {
+        .name{
+            left: 25px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .name{
+            left: 5%;
+        }
+    }
 }
 
 .in-party{
     background: $white;
     height: 283px;
     padding: 30px 30px 0;
+    @media screen and (max-width:1024px) {
+        padding-left: 25px;
+        padding-right: 25px;
+    }
     .ti{
         border-bottom: 1px solid $hc1;
         padding-bottom: 20px;
@@ -231,6 +403,7 @@
     }
     .date{
         float: right;
+        margin-left: 10px;
     }
     .nowti{
         line-height: 34px;
@@ -246,6 +419,17 @@
         .ti{
             padding-bottom: 10px;
             margin-bottom: 10px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        height: auto;
+        padding: 30px 5%;
+    }
+    @media screen and (max-width:481px) {
+        padding-top: 25px;
+        padding-bottom: 20px;
+        .date{
+            font-size: 12px;
         }
     }
 }
