@@ -63,7 +63,7 @@
 
 .his-wrap{
     position: relative;
-    padding: 40px 0 100px;
+    padding: 40px 0 90px;
     border-top: 1px solid $white;
     color: $white;
     &:before{
@@ -74,6 +74,6 @@
         border-left: 1px solid $white;
     }
     @media screen and (max-width:601px) {
-        padding: (40 / 600) * 100vw 0 60px;
+        padding: (40 / 600) * 100vw 0 (90 / 600) * 100vw;
     }
 }

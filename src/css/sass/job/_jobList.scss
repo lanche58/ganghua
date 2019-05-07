@@ -22,8 +22,8 @@
             }
         }
     }
-    .t{ overflow: hidden; background: $white; cursor: pointer;
-        > div{ float: left; position: relative; height: 60px; padding: 0 5px; @include bs; text-align: center; @include mt3;
+    .t{ overflow: hidden; cursor: pointer;
+        > div{ float: left; background: $white; position: relative; height: 60px; padding: 0 5px; @include bs; text-align: center; @include mt3;
             + div{ border-left: 1px solid $hc3; }
         }
         .nowti{ line-height: 60px; }

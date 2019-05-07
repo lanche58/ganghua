@@ -267,11 +267,12 @@
   .pnav li {
     width: 25%;
     float: left; }
+    .pnav li + li a {
+      border-left: 1px solid #fff;
+      border-color: rgba(255, 255, 255, 0.8); }
   .pnav a {
     display: block;
     padding: 13px 0;
-    border-left: 1px solid #fff;
-    border-color: rgba(255, 255, 255, 0.8);
     background: #1EB9EE;
     background: rgba(30, 185, 238, 0.8);
     text-align: center;
@@ -312,12 +313,13 @@
         width: auto !important;
         float: none;
         padding: 0 10px; }
+        .pnav li + li a {
+          border: none; }
       .pnav a {
         position: relative;
         padding-left: 15px;
         padding-right: 15px;
         background: none;
-        border: none;
         color: #666; }
         .pnav a:before {
           content: "";
@@ -421,7 +423,7 @@
     background: none !important;
     height: auto !important;
     line-height: 24px !important;
-    color: #666 !important;
+    color: #ccc !important;
     opacity: 1 !important;
     font-size: 16px !important; }
     .share a + a {
@@ -2024,10 +2026,10 @@
 
 .job-list .t {
   overflow: hidden;
-  background: #fff;
   cursor: pointer; }
   .job-list .t > div {
     float: left;
+    background: #fff;
     position: relative;
     height: 60px;
     padding: 0 5px;
@@ -2188,9 +2190,9 @@
 
 .ab2 {
   position: relative;
-  padding-top: 126px; }
+  padding-top: 90px; }
   .ab2 .leader-cont {
-    margin-top: 60px; }
+    margin-top: 50px; }
   .ab2 .pw {
     position: relative; }
   .ab2 .bg {
@@ -2198,21 +2200,15 @@
     left: 0;
     right: 0;
     top: 0;
-    bottom: 120px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; }
+    bottom: 120px; }
   @media screen and (max-width: 1024px) {
     .ab2 {
       padding-bottom: 90px; }
       .ab2 .bg {
         bottom: 0; } }
-  @media screen and (max-width: 641px) {
-    .ab2 .leader-cont {
-      margin-top: 50px; } }
   @media screen and (max-width: 601px) {
     .ab2 {
-      padding-bottom: 15%; }
+      padding: 15% 0; }
       .ab2 .leader-cont {
         margin-top: 8.33333%; } }
 
@@ -2270,21 +2266,18 @@
       padding-bottom: 7.5vw; } }
 
 .ab3 {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 120px;
-  margin-top: 90px; }
+  padding-top: 90px;
+  margin-top: 120px; }
   .ab3 .his-wrap {
     margin-top: 50px; }
+  @media screen and (max-width: 1024px) {
+    .ab3 {
+      margin-top: 0; } }
   @media screen and (max-width: 601px) {
     .ab3 {
-      margin-top: 15%; }
+      padding-top: 15%; }
       .ab3 .his-wrap {
         margin-top: 8.33333vw; } }
-  @media screen and (max-width: 481px) {
-    .ab3 {
-      padding-top: 80px; } }
 
 .ab4 .cul-list {
   margin-top: 50px; }
@@ -2438,7 +2431,7 @@
 
 .his-wrap {
   position: relative;
-  padding: 40px 0 100px;
+  padding: 40px 0 90px;
   border-top: 1px solid #fff;
   color: #fff; }
   .his-wrap:before {
@@ -2450,7 +2443,7 @@
     border-left: 1px solid #fff; }
   @media screen and (max-width: 601px) {
     .his-wrap {
-      padding: 6.66667vw 0 60px; } }
+      padding: 6.66667vw 0 15vw; } }
 
 .cul-list {
   margin-left: -30px; }
@@ -3549,6 +3542,7 @@
   position: absolute;
   left: 50%;
   top: 50%;
+  z-index: 99;
   margin: -210px 0 0 -600px;
   width: 400px;
   height: 420px;

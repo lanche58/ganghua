@@ -23,9 +23,9 @@
 
 .ab2{
     position: relative;
-    padding-top: 126px;
+    padding-top: 90px;
     .leader-cont{
-        margin-top: 60px;
+        margin-top: 50px;
     }
     .pw{
         position: relative;
@@ -34,7 +34,6 @@
         @include plr;
         top: 0;
         bottom: 120px;
-        @include bg;
     }
     @media screen and (max-width:1024px) {
         padding-bottom: 90px;
@@ -42,13 +41,8 @@
             bottom: 0;
         }
     }
-    @media screen and (max-width:641px) {
-        .leader-cont{
-            margin-top: 50px;
-        }
-    }
     @media screen and (max-width:601px) {
-        padding-bottom: (90 / 600) * 100%;
+        padding: (90 / 600) * 100% 0;
         .leader-cont{
             margin-top: (50 / 600) * 100%;
         }
@@ -124,20 +118,19 @@
 }
 
 .ab3{
-    @include bg;
-    padding-top: 120px;
-    margin-top: 90px;
+    padding-top: 90px;
+    margin-top: 120px;
     .his-wrap{
         margin-top: 50px;
     }
+    @media screen and (max-width:1024px) {
+        margin-top: 0;
+    }
     @media screen and (max-width:601px) {
-        margin-top: (90 / 600) * 100%;
+        padding-top: (90 / 600) * 100%;
         .his-wrap{
             margin-top: (50 / 600) * 100vw;
         }
-    }
-    @media screen and (max-width:481px) {
-        padding-top: 80px;
     }
 }
 

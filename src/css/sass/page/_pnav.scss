@@ -7,12 +7,16 @@
     li{
         width: 25%;
         float: left;
+        + li{
+            a{
+                border-left: 1px solid $white;
+                border-color: $white-8;
+            }
+        }
     }
     a{
         display: block;
         padding: (50px - 24px) / 2 0;
-        border-left: 1px solid $white;
-        border-color: $white-8;
         background: $mc1;
         background: $mco1;
         text-align: center;
@@ -56,13 +60,17 @@
             width: auto !important;
             float: none;
             padding: 0 10px;
+            + li{
+                a{
+                    border: none;
+                }
+            }
         }
         a{
             position: relative;
             padding-left: 15px;
             padding-right: 15px;
             background: none;
-            border: none;
             color: $fc2;
             &:before{
                 @include hl($mc1, 4px);
